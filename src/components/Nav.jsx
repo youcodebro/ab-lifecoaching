@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo.webp`;
+
 const NAV_LINKS = [
   { label: 'Is Coaching For You?', href: '#coaching' },
   { label: 'Creating Impact',      href: '#impact'   },
@@ -36,8 +38,8 @@ export default function Nav() {
         style={{ height: 'var(--nav-h)' }}
       >
         <a href="#hero" onClick={close}
-          className="font-serif text-[30px] font-normal tracking-[0.02em] leading-none text-ink shrink-0">
-          A<em className="italic">B</em>
+          className="shrink-0 flex items-center leading-none">
+          <img src={LOGO_SRC} alt="Alexis Bormann" className="h-12 w-auto md:h-14 object-contain" />
         </a>
 
         {/* Links — hidden on mobile */}

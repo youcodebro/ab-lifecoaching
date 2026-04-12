@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo.webp`;
+
 export default function Loader() {
   const [phase, setPhase] = useState('visible');
 
@@ -17,11 +19,17 @@ export default function Loader() {
         bg-ink transition-opacity duration-700
         ${phase === 'fading' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
     >
-      {/* Logo */}
-      <p className="font-serif text-[80px] font-light text-white tracking-[0.04em] leading-none
-                    opacity-0 animate-loader-logo">
-        A<em className="italic">B</em>
-      </p>
+      {/* Logo size: change h-[…] and max-w on the <img> below; card padding: px/py on this div */}
+      <div
+        className="opacity-0 animate-loader-logo bg-white px-5 py-4
+          shadow-[0_12px_48px_rgba(0,0,0,0.35)]"
+      >
+        <img
+          src={LOGO_SRC}
+          alt="Alexis Bormann"
+          className="h-[64px] w-auto max-w-[min(200px,78vw)] object-contain block"
+        />
+      </div>
 
       {/* Tagline */}
       <p className="font-sans text-[10px] font-light tracking-[0.36em] uppercase
