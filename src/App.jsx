@@ -16,7 +16,7 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <Marquee />
+        {/* <Marquee /> */}
         <Coaching />
         <Impact />
         <FAQ />

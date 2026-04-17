@@ -13,6 +13,9 @@
   :root { --nav-h: 64px; }
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /* ── Scrollbar ── */
 ::-webkit-scrollbar       { width: 2px; }
 ::-webkit-scrollbar-track { background: #f8f7f4; }

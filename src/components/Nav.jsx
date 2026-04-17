@@ -62,7 +62,7 @@ export default function Nav() {
           className={`hidden md:inline-flex items-center gap-2 px-6 py-3 text-[9px] font-normal
             tracking-[0.2em] uppercase bg-ink text-white border border-ink
             hover:bg-ink2 transition-all duration-300
-            ${stuck ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+            ${stuck ? 'opacity-100 pointer-events-auto' : 'opacity-100 pointer-events-auto'}`}>
           Request a Session
         </a>
 

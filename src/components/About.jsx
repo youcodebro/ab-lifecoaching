@@ -5,21 +5,30 @@ export default function About() {
   const ref = useScrollReveal();
 
   return (
-    <section id="about" ref={ref} className="bg-paper py-[140px] px-[52px]">
-      <div className="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[100px] items-start">
+    <section id="about" ref={ref} className=" py-[80px] px-[52px]">
+      <div className="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[50px] items-start">
 
         {/* Left — bio */}
-        <div>
+        <div className='bg-paper p-5 border-2 border-solid border-gray-700'>
           <p className="reveal text-[11px] tracking-[0.28em] uppercase text-muted mb-7">
             About Alexis
           </p>
           <h2 className="reveal delay-1 font-serif font-light leading-[1.2] mb-12
                          text-[clamp(28px,3.5vw,48px)] text-ink">
-            My own journey<br />informs so much<br />of <em className="italic">what I do</em>
+            My own <i>journey</i> <br />informs so much<br />of <em className="italic">what I do</em>
           </h2>
 
+        </div>
+
+        {/* Right — photo */}
+        <div className="bg-paper p-6 reveal-right about-content">
+          {/* <div className="w-full aspect-[2/3] overflow-hidden bg-paper2">
+            <img src={headshotImg} alt="Alexis Bormann"
+              className="w-full h-full object-cover object-top" />
+          </div> */}
           <p className="reveal delay-2 text-base font-extralight leading-[2.1] text-ink2 mb-6">
-            I was born and raised in the stimulating buzz of New York City. Since I was little,
+            {/* I was born and raised in the  */}
+            <strong className="text-ink font-normal">I was born and raised amidst the</strong> stimulating buzz of New York City. Since I was little,
             I was always chasing big. From age 12, I was a competitive runner always trying to
             beat my own records. I started my own theater company at the age of 26. I landed a
             job in advertising with no prior experience.
@@ -38,8 +47,8 @@ export default function About() {
             through what is holding them back from finding their flow. From living a life that feels
             genuine. From the life they are meant to be leading.
           </p>
-          <p className="reveal font-serif italic text-lg text-ink mt-2 mb-0">
-            Life is fleeting. Let's seize it together.
+          <p className="reveal font-serif text-lg text-ink mt-2 mb-0">
+          <strong className="text-ink font-normal"> Life is fleeting. Let's seize it together. </strong>
           </p>
 
           <div className="reveal mt-10 p-8 bg-white border-l-2 border-ink">
@@ -51,14 +60,6 @@ export default function About() {
                          border-b border-ink/10 pb-0.5 transition-colors hover:text-ink hover:border-ink">
               WordByDesign ↗
             </a>
-          </div>
-        </div>
-
-        {/* Right — photo */}
-        <div className="reveal-right">
-          <div className="w-full aspect-[2/3] overflow-hidden bg-paper2">
-            <img src={headshotImg} alt="Alexis Bormann"
-              className="w-full h-full object-cover object-top" />
           </div>
         </div>
 
