@@ -69,6 +69,7 @@ export default function Connect() {
                        tracking-[0.2em] uppercase bg-ink text-white border border-ink
                        hover:bg-ink2 transition-colors">
             Request a Session <ArrowIcon />
+            
           </a>
         </div>
 
