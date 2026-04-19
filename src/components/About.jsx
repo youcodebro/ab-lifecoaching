@@ -1,19 +1,19 @@
-import headshotImg from '../assets/headshot.jpg';
+
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 export default function About() {
   const ref = useScrollReveal();
 
   return (
-    <section id="about" ref={ref} className=" py-[80px] px-[52px]">
-      <div className="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[50px] items-start">
+    <section id="about" ref={ref} className="py-[40px] md:py-[80px] px-[30px] md:px-[52px]">
+      <div className="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[30px] md:gap-[50px] items-start">
 
         {/* Left — bio */}
         <div className='bg-paper p-5 border-2 border-solid border-gray-700'>
           <p className="reveal text-[11px] tracking-[0.28em] uppercase text-muted mb-7">
             About Alexis
           </p>
-          <h2 className="reveal delay-1 font-serif font-light leading-[1.2] mb-12
+          <h2 className="reveal delay-1 font-serif font-light leading-[1.2] mb-4 md:mb-10
                          text-[clamp(28px,3.5vw,48px)] text-ink">
             My own <i>journey</i> <br />informs so much<br />of <em className="italic">what I do</em>
           </h2>

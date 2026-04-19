@@ -42,3 +42,52 @@ html {
 
 /* ── Hero animations (opacity:0 start requires CSS, not Tailwind) ── */
 .hero-anim { opacity: 0; }
+.faq-thumb img{
+  min-height: 400px;
+}
+@media screen and (max-width: 1024px) {
+  .navigation-wrap{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .mobile-wrapper{
+    padding-top: 100px;
+  }
+  .pd-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .pd-top-section{
+    padding-top: 60px;
+  }
+  .pd-bottom-section{
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .mobile-nav-wrap,.btn-request{
+    display: none !important;
+  }
+  .btn-burger{
+    display: inline-flex !important;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .faq-thumb{
+    order: -1;
+    margin-bottom: 20px;
+  }
+  div br{
+    display: none;
+  }
+  .faq-thumb img{
+    min-height: auto;
+  }
+}
+/* @media screen and (max-width: 1024px) {
+  .btn-burger span{
+    color: #fff;
+  }
+} */

@@ -1,7 +1,6 @@
 import Loader   from './components/Loader';
 import Nav      from './components/Nav';
 import Hero     from './components/Hero';
-import Marquee  from './components/Marquee';
 import Coaching from './components/Coaching';
 import Impact   from './components/Impact';
 import FAQ      from './components/FAQ';

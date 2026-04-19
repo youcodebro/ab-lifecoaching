@@ -1,5 +1,3 @@
-import heroImg from '../assets/hero.jpg';
-
 const ArrowIcon = () => (
   <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
     <path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
@@ -17,7 +15,7 @@ export default function Hero() {
         style={{ background: 'radial-gradient(ellipse 60% 80% at 72% 50%, rgba(240,237,230,.7) 0%, transparent 70%)' }} />
 
       {/* Text */}
-      <div className="relative z-10 px-[52px] py-10 md:pr-12 order-2 md:order-1">
+      <div className="relative z-10 px-[30px] md:px-[52px] py-10 md:pr-12 order-2 md:order-1">
         {/* <p className="hero-anim animate-fade-up-1 text-[11px] font-normal tracking-[0.3em]
                       uppercase text-muted mb-9">
           Life Coaching with Alexis Bormann
