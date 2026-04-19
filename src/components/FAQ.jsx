@@ -79,31 +79,47 @@ export default function FAQ() {
   const col2 = FAQ_ITEMS.slice(2);
 
   return (
-    <section id="faq" ref={ref} className="bg-paper py-[80px] px-[52px]">
+    <section id="faq" ref={ref} className="bg-paper py-[40px] md:py-[80px] px-[30px] md:px-[52px]">
       <div className="max-w-[1140px] mx-auto">
-        <p className="reveal text-[11px] tracking-[0.28em] uppercase text-muted mb-6">
-          Common Questions
-        </p>
-        <h2 className="reveal delay-1 font-serif font-light leading-[1.15] mb-[72px]
-                       text-[clamp(32px,4vw,56px)]">
-          Questions about<br /><em className="italic">coaching</em>
-        </h2>
+        {/* <div className='faq-content'>
+
+          <p className="reveal text-[11px] tracking-[0.28em] uppercase text-muted mb-6">
+            Common Questions
+          </p>
+          <h2 className="reveal delay-1 font-serif font-light leading-[1.15] mb-[72px]
+                        text-[clamp(32px,4vw,56px)]">
+            Questions about<br /><em className="italic">coaching</em>
+          </h2>
+        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20">
-          <div className="reveal border-t border-ink/10">
-            {/* {col1.map(item => <FAQItem key={item.q} {...item} />)} */}
-            {col1.map((item, index) => (
-              <FAQItem
-                key={item.q}
-                {...item}
-                isOpen={openIndex === index}
-                onClick={() =>
-                  setOpenIndex(openIndex === index ? null : index)
-                }
-              />
-            ))}
+          <div className='faq-left'>
+            <div className='faq-content'>
+                <p className="reveal text-[11px] tracking-[0.28em] uppercase text-muted mb-6">
+                  Common Questions
+                </p>
+                <h2 className="reveal delay-1 font-serif font-light leading-[1.15] md:mb-[60px] mb-30px]
+                              text-[clamp(32px,4vw,56px)]">
+                  Questions about<br /><em className="italic">coaching</em>
+                </h2>
+              </div>
+              <div className="reveal border-t border-ink/10">
+                {/* {col1.map(item => <FAQItem key={item.q} {...item} />)} */}
+                {col1.map((item, index) => (
+                  <FAQItem
+                    key={item.q}
+                    {...item}
+                    isOpen={openIndex === index}
+                    onClick={() =>
+                      setOpenIndex(openIndex === index ? null : index)
+                    }
+                  />
+                ))}
+              </div>
           </div>
-          <div className='faq-thumb'>
+
+          
+          <div className='faq-thumb flex flex-col justify-center'>
             <img src={faqImg} alt="FAQ"
               className=" object-cover object-top" />
           </div>

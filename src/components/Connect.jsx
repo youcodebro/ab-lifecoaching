@@ -1,4 +1,3 @@
-import therapyImg from '../assets/therapy.png';
 import profileImg from '../assets/profile-img.jpg';
 import instaImg from '../assets/instagram.png';
 import linkedinImg from '../assets/linkedin.png';
@@ -16,7 +15,7 @@ export default function Connect() {
 
   return (
     <section id="connect" ref={ref}
-      className="relative overflow-hidden bg-white pt-[80px] pb-[60px] px-[52px] text-center">
+      className="relative overflow-hidden bg-white pt-[40px] md:pt-[80px] pb-[30px] md:pb-[60px] px-[30px] md:px-[52px] text-center">
 
       {/* Radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
@@ -65,7 +64,7 @@ export default function Connect() {
 
         <div className="reveal delay-4">
           <a href="mailto:alexis@alexisbormann.com"
-            className="inline-flex items-center gap-2 px-11 py-4 text-[11px] font-normal
+            className="inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-ink text-white border border-ink
                        hover:bg-ink2 transition-colors">
             Request a Session <ArrowIcon />

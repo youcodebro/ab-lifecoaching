@@ -1,4 +1,3 @@
-import clientImg from '../assets/client.png';
 import clientCircleImg from '../assets/circle-img.jpg';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
@@ -33,8 +32,8 @@ export default function Coaching() {
 
   return (
     <section id="coaching" ref={ref}
-      className="bg-white py-[100px] px-[52px] md:px-[52px]">
-      <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[100px] items-start">
+      className="bg-white py-[100px] px-[30px] md:px-[52px] pd-section">
+      <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-[100px] gap-[40px] items-start">
 
         {/* Left */}
         <div>
@@ -87,12 +86,12 @@ export default function Coaching() {
         </div>
 
         {/* Right — image */}
-        <div className="reveal-right md:order-last order-first">
+        <div className="reveal-right md:order-last order-firs thumb-order">
           <div className="w-full coaching-wrapper">
             
             <div className='thumb-wrapper overflow-hidden'>
               <img src={clientCircleImg} alt="Happy coaching client"
-              className=" object-cover object-top" />
+              className=" object-cover object-top m-auto" />
             </div>
             {/* <ul className="mt-[52px] flex flex-col">
             {SCENARIOS.map((item, i) => (
