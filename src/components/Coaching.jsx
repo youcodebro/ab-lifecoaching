@@ -25,7 +25,6 @@ const SCENARIOS = [
   <>Is parenthood <span className="text-red-500">hijacking</span> your own needs?</>,
   <>Does your college-bound or post-college child <span className="text-red-500">need</span> direction?</>,
 ];
-const NUMERALS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii'];
 
 export default function Coaching() {
   const ref = useScrollReveal();

@@ -30,14 +30,11 @@ const FAQ_ITEMS = [
   
 ];
 
-function FAQItem({ q, a, isOpen, onClick  }) {
-  // const [openIndex, setOpenIndex] = useState(0); 
-  const [open, setOpen] = useState(false);
-  
+function FAQItem({ q, a, isOpen, onClick }) {
   return (
-    <div className={`border-b border-ink/10 ${open ? 'open' : ''}`}>
+    <div className={`border-b border-ink/10 ${isOpen ? 'open' : ''}`}>
       <button
-        onClick={() => onClick(v => !v)}
+        onClick={onClick}
         className="w-full flex justify-between items-center gap-5 py-[26px]
                    text-base font-light text-ink text-left hover:text-ink2 transition-colors"
       >
@@ -74,9 +71,8 @@ function FAQItem({ q, a, isOpen, onClick  }) {
 
 export default function FAQ() {
   const ref = useScrollReveal();
-  const [openIndex, setOpenIndex] = useState(0); 
+  const [openIndex, setOpenIndex] = useState(0);
   const col1 = FAQ_ITEMS.slice(0, 4);
-  const col2 = FAQ_ITEMS.slice(2);
 
   return (
     <section id="faq" ref={ref} className="bg-paper py-[40px] md:py-[80px] px-[30px] md:px-[52px]">
