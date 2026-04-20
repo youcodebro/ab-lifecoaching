@@ -51,10 +51,10 @@ export default function Coaching() {
             strengths, and resourcefulness one step at a time.
           </p> */}
           <p className="reveal delay-2 mt-9 text-base font-extralight leading-[2.1] text-ink2">
-          It’s not about what we do in our lives, it’s what we want our lives to be about
-          When it comes to barriers we face in life, I have a knack for translating the complex into actionable simplicity—helping clarify and uncover what is lingering under the surface. <br></br>
+          It’s not about what we do in our lives, it’s what we want our lives to be about <br></br>
+          When it comes to barriers we face in life, I have a knack for translating the complex into actionable simplicity—helping clarify and uncover what is lingering under the surface. <br></br> <br></br>
 
-          My approach stems from a sense of playfulness and curiosity rooted in disruption and depth. I am here to help you explore barriers and navigate them with clarity and purpose. <br></br>
+          My approach stems from a sense of playfulness and curiosity rooted in disruption and depth. I am here to help you explore barriers and navigate them with clarity and purpose. <br></br> <br></br>
 
           Together we identify how you can grow and connect with your natural creativity, strengths, and resourcefulness one step at a time.
 
@@ -121,10 +121,11 @@ export default function Coaching() {
 
           <div className="reveal mt-[52px]">
             <a href="#connect"
-              className="inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
+              className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
                          tracking-[0.2em] uppercase bg-ink text-white border border-ink
-                         hover:bg-ink2 transition-colors">
-              What is Coaching? <ArrowIcon />
+                          transition-colors">
+                            <span className='text'>What is Coaching?</span>
+                        <span className='icon'><ArrowIcon /></span>
             </a>
           </div>
             

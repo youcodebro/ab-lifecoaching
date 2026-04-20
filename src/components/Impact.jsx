@@ -15,14 +15,14 @@ export default function Impact() {
           </p>
           <h2 className="reveal delay-1 font-serif font-light leading-[1.2] text-white
                          text-[clamp(32px,3.5vw,52px)]">
-            The <i>impact</i><br />of <em className="italic">coaching</em>
+            The <i> impact </i><br />of coaching
           </h2>
         </div>
 
         {/* Right */}
         <div className='p-5'>
-          <p className="reveal font-serif text-2xl font-light italic leading-[1.55]
-                        text-gray/85 pb-6 border-b border-white/10">
+          <p className="reveal font-serif text-2xl font-ligh italic leading-[1.55]
+                        text-gray/85 pb-6 border-b font-bold border-white/10">
             While everyone's journey is different, the breakthroughs experienced
             with coaching can be <em>life changing</em>
           </p>
@@ -38,7 +38,7 @@ export default function Impact() {
               make her a bit wobbly during college interviews.
             </p>
             <p className="reveal delay-3 text-base font-extralight leading-[2.1] text-gray/65">
-              <strong className="text-gray/70 font-normal block mb-2 text-[11px] tracking-[0.1em] uppercase">
+              <strong className="text-gray/70 font-bold block mb-2 text-[11px] tracking-[0.1em] uppercase">
                 It's not about figuring out what they want to do
               </strong>
               Over the course of the summer, the daughter and I established a rhythm during our sessions
@@ -47,7 +47,7 @@ export default function Impact() {
               was able to bring to the table what made her tick.
             </p>
             <p className="reveal delay-4 text-base font-extralight leading-[2.1] text-gray/65">
-              <strong className="text-gray/70 font-normal block mb-2 text-[11px] tracking-[0.1em] uppercase">
+              <strong className="text-gray/70 font-bold block mb-2 text-[11px] tracking-[0.1em] uppercase">
                 A clear impact
               </strong>
               During her interviews, an admissions officer commented they were impressed to meet a young
@@ -55,7 +55,7 @@ export default function Impact() {
               passionate, she had a unique "spike" that differentiated her from her peers. It wasn't
               about the job she'd have after graduating — it was about who she is.
             </p>
-            <p className="reveal font-serif italic text-lg text-gray/75 leading-[1.6]">
+            <p className="reveal font-serif italic text-lg text-gray/75 font-bold leading-[1.6]">
               In the end, she applied early and got in.
             </p>
           </div>

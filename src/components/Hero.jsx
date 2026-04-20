@@ -7,7 +7,7 @@ const ArrowIcon = () => (
 export default function Hero() {
   return (
     <section id="hero"
-      className="min-h-screen grid grid-cols-1 md:grid-cols-1 items-center overflow-hidden
+      className="banner-section min-h-screen grid grid-cols-1 md:grid-cols-1 items-center overflow-hidden
                  relative bg-white pt-[var(--nav-h)]">
 
       {/* Radial glow */}
@@ -15,7 +15,7 @@ export default function Hero() {
         style={{ background: 'radial-gradient(ellipse 60% 80% at 72% 50%, rgba(240,237,230,.7) 0%, transparent 70%)' }} />
 
       {/* Text */}
-      <div className="relative z-10 px-[30px] md:px-[52px] py-10 md:pr-12 order-2 md:order-1">
+      <div className="banner-content relative z-10 px-[30px] md:px-[52px] py-10 md:pr-12 order-2 md:order-1">
         {/* <p className="hero-anim animate-fade-up-1 text-[11px] font-normal tracking-[0.3em]
                       uppercase text-muted mb-9">
           Life Coaching with Alexis Bormann
@@ -38,15 +38,16 @@ export default function Hero() {
         
         <div className="hero-anim animate-fade-up-4 mt-5 flex gap-4 flex-wrap mt-[52px]">
           <a href="#connect"
-            className="inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
+            className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-ink text-white border border-ink
-                       hover:bg-ink2 transition-colors">
-            Request a Session <ArrowIcon />
+                        transition-colors">
+            <span className='text'>Request a Session</span>
+                        <span className='icon'><ArrowIcon /></span>
           </a>
           <a href="#faq"
-            className="inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
+            className="btn-bg-hover inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-transparent text-ink border border-ink
-                       hover:bg-ink hover:text-white transition-colors">
+                        hover:text-white transition-colors">
             What is life coaching?
           </a>
         </div>
@@ -61,7 +62,7 @@ export default function Hero() {
       </div>
 
       {/* Image Removed as client asked | Removed that classes this parent (min-h-[600px])*/}
-      <div className="relative h-full  flex items-stretch order-1 md:order-2 px-[52px]">
+      <div className=" relative h-full  flex items-stretch order-1 md:order-2 px-[52px]">
         {/* <div className="flex-1 overflow-hidden">
           <img src={heroImg} alt="Life coaching session"
             className="w-full h-full object-cover object-top" />

@@ -1,4 +1,4 @@
-const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo.webp`;
+const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo-updated.webp`;
 // const YCB_LOGO_SRC = `${process.env.PUBLIC_URL}/media/ycb-logo.png`;
 
 const LINKS = [

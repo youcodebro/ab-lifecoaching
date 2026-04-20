@@ -44,7 +44,7 @@ export default function Connect() {
           </a>
         </p> */}
 
-        <ul className='social-links flex gap-4 justify-center mb-7'>
+        <ul className='social-links flex gap-9 justify-center mb-7'>
           <li>
             <a href="mailto:alexis@alexisbormann.com">
               <img src={mailImg} className='max-w-[40px]' alt="Alexis Bormann Email Address" />
@@ -64,11 +64,12 @@ export default function Connect() {
 
         <div className="reveal delay-4">
           <a href="mailto:alexis@alexisbormann.com"
-            className="inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[11px] font-normal
+            className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-ink text-white border border-ink
-                       hover:bg-ink2 transition-colors">
-            Request a Session <ArrowIcon />
-            
+                        transition-colors">
+                        <span className='text'>Request a Session</span>
+                        <span className='icon'><ArrowIcon /></span>
+    
           </a>
         </div>
 

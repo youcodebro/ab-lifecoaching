@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo.webp`;
+const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo-updated.webp`;
 
 const NAV_LINKS = [
   { label: 'Is Coaching For You?', href: '#coaching' },
@@ -38,7 +38,7 @@ export default function Nav() {
         style={{ height: 'var(--nav-h)' }}
       >
         <a href="#hero" onClick={close}
-          className="shrink-0 flex items-center leading-none">
+          className="logo shrink-0 flex items-center leading-none">
           <img src={LOGO_SRC} alt="Alexis Bormann" className="h-12 w-auto md:h-14 object-contain" />
         </a>
 
@@ -59,11 +59,11 @@ export default function Nav() {
 
         {/* CTA — hidden on mobile, fades in when stuck */}
         <a href="#connect"
-          className={`btn-request hidden md:inline-flex items-center gap-2 px-6 py-3 text-[9px] font-normal
+          className={`btn-request btn-bg-hover hidden md:inline-flex items-center gap-2 px-6 py-3 text-[9px] font-normal
             tracking-[0.2em] uppercase bg-ink text-white border border-ink
-            hover:bg-ink2 transition-all duration-300
+            transition-all duration-300
             ${stuck ? 'opacity-100 pointer-events-auto' : 'opacity-100 pointer-events-auto'}`}>
-          Request a Session
+          <span className='text'> Request a Session</span>
         </a>
 
         {/* Burger — mobile only */}

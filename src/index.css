@@ -45,6 +45,53 @@ html {
 .faq-thumb img{
   min-height: 400px;
 }
+.social-links li a, .social-links img{
+  transition: all 0.3s ease;
+}
+.social-links li a:hover img{
+  transform: translateY(-4px);
+}
+.btn-effect,.btn-effect .icon,.btn-effect .text{
+  transition: all 0.3s ease;
+}
+.btn-effect .icon{
+  transform: translateX(-25px);
+  opacity: 0;
+  visibility: hidden;
+}
+.btn-effect .text{
+  transform: translateX(15px);
+}
+.btn-effect:hover .text{
+  transform: translateX(0);
+}
+.btn-effect:hover .icon{
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+
+}
+.btn-bg-hover{
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.btn-bg-hover::before{
+  content: '';
+  width: 0;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+.btn-bg-hover:hover::before{
+  width: 100%;
+  left: 0;
+  right: inherit;
+}
 @media screen and (max-width: 1024px) {
   .navigation-wrap{
     padding-left: 15px !important;
@@ -71,13 +118,23 @@ html {
   .btn-burger{
     display: inline-flex !important;
   }
+  .logo img{
+    /* filter: brightness(0) invert(1); */
+    background-color: #fff;
+  }
 
 }
 
 @media screen and (max-width: 767px) {
+  .banner-section{
+    min-height: auto;
+  }
+  .banner-section .banner-content{
+    padding-top: 20px;
+  }
   .faq-thumb{
     order: -1;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   div br{
     display: none;

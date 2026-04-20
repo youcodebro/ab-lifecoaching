@@ -15,7 +15,7 @@ export default function About() {
           </p>
           <h2 className="reveal delay-1 font-serif font-light leading-[1.2] mb-4 md:mb-10
                          text-[clamp(28px,3.5vw,48px)] text-ink">
-            My own <i>journey</i> <br />informs so much<br />of <em className="italic">what I do</em>
+            My own <i> journey</i> <br /> informs so much<br /> of what I do
           </h2>
 
         </div>
@@ -48,7 +48,7 @@ export default function About() {
             genuine. From the life they are meant to be leading.
           </p>
           <p className="reveal font-serif text-lg text-ink mt-2 mb-0">
-          <strong className="text-ink font-normal"> Life is fleeting. Let's seize it together. </strong>
+          <strong className="text-ink font-bold text-[20px]"> Life is fleeting. Let's seize it together. </strong>
           </p>
 
           <div className="reveal mt-10 p-8 bg-white border-l-2 border-ink">

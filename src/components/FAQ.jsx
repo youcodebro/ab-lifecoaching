@@ -4,7 +4,7 @@ import faqImg from '../assets/faq-img.jpg';
 
 const FAQ_ITEMS = [
   {
-    q: 'What is life coaching?',
+    q: 'What is the discovery called?',
     a: 'In the simplest of terms, life coaching is helping you clarify what you want and empowering you to move toward it.',
   },
   {
@@ -75,7 +75,7 @@ export default function FAQ() {
   const col1 = FAQ_ITEMS.slice(0, 4);
 
   return (
-    <section id="faq" ref={ref} className="bg-paper py-[40px] md:py-[80px] px-[30px] md:px-[52px]">
+    <section id="faq" ref={ref} className=" py-[40px] md:py-[80px] px-[30px] md:px-[52px]">
       <div className="max-w-[1140px] mx-auto">
         {/* <div className='faq-content'>
 
@@ -88,15 +88,15 @@ export default function FAQ() {
           </h2>
         </div> */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20">
-          <div className='faq-left'>
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className='faq-left p-[30px] bg-paper'>
             <div className='faq-content'>
                 <p className="reveal text-[11px] tracking-[0.28em] uppercase text-muted mb-6">
                   Common Questions
                 </p>
                 <h2 className="reveal delay-1 font-serif font-light leading-[1.15] md:mb-[60px] mb-30px]
                               text-[clamp(32px,4vw,56px)]">
-                  Questions about<br /><em className="italic">coaching</em>
+                  Questions about <br /><em className="italic">coaching</em>
                 </h2>
               </div>
               <div className="reveal border-t border-ink/10">
@@ -115,7 +115,7 @@ export default function FAQ() {
           </div>
 
           
-          <div className='faq-thumb flex flex-col justify-center'>
+          <div className='faq-thumb'>
             <img src={faqImg} alt="FAQ"
               className=" object-cover object-top" />
           </div>
