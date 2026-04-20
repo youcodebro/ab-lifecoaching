@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo.webp`;
+const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo-white-transparent.webp`;
 
 export default function Loader() {
   const [phase, setPhase] = useState('visible');
@@ -21,13 +21,13 @@ export default function Loader() {
     >
       {/* Logo size: change h-[…] and max-w on the <img> below; card padding: px/py on this div */}
       <div
-        className="opacity-0 animate-loader-logo bg-white px-5 py-4
-          shadow-[0_12px_48px_rgba(0,0,0,0.35)]"
+        className="opacity-0 animate-loader-logo bg-blac 
+          "
       >
         <img
           src={LOGO_SRC}
           alt="Alexis Bormann"
-          className="h-[64px] w-auto max-w-[min(200px,78vw)] object-contain block"
+          className="h-[90px] w-auto max-w-[min(400px,90vw)] object-contain block"
         />
       </div>
 
