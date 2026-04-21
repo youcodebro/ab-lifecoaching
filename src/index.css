@@ -93,6 +93,9 @@ html {
   right: inherit;
 }
 @media screen and (max-width: 1024px) {
+  html,body{
+    overflow-x: hidden;
+  }
   .navigation-wrap{
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -126,6 +129,7 @@ html {
 }
 
 @media screen and (max-width: 767px) {
+  
   .banner-section{
     min-height: auto;
   }
