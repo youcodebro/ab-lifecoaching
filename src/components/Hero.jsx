@@ -82,7 +82,7 @@ export default function Hero() {
 
         <div className="hero-anim animate-fade-up-5 hidde md:block text-center p-4 w-full z-10
                         ">
-          <p className="font-serif text-base text-[22px] md:text-[26px] italic leading-[1.65] text-ink2">
+          <p className="font-serif text-[22px] md:text-[26px] italic leading-[1.65] text-ink2">
             "My sessions were surprising and immensely fruitful. 
             As a person who is hopeful of a second career, Alexis understood my need for a plan. 
             She empathized and encouraged my life aspirations. Her guidance helped bring clarity and focus, which were the key missing ingredients for me."
