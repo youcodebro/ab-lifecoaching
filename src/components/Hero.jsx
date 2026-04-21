@@ -15,7 +15,7 @@ export default function Hero() {
         style={{ background: 'radial-gradient(ellipse 60% 80% at 72% 50%, rgba(240,237,230,.7) 0%, transparent 70%)' }} />
 
       {/* Text */}
-      <div className="banner-content relative z-10 px-[30px] md:px-[52px] py-10 md:pr-12 order-2 md:order-1">
+      <div className="banner-content relative z-10 px-[20px] md:px-[52px] py-10 md:pr-12 order-2 md:order-1">
         {/* <p className="hero-anim animate-fade-up-1 text-[11px] font-normal tracking-[0.3em]
                       uppercase text-muted mb-9">
           Life Coaching with Alexis Bormann
@@ -36,7 +36,7 @@ export default function Hero() {
           {/* Starting exactly where you are. */}
         </p>
         
-        <div className="hero-anim animate-fade-up-4 mt-5 flex gap-4 flex-wrap mt-[52px]">
+        <div className="hero-anim animate-fade-up-4 flex gap-4 flex-wrap mt-[25px]">
           <a href="#connect"
             className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-ink text-white border border-ink
@@ -62,7 +62,7 @@ export default function Hero() {
       </div>
 
       {/* Image Removed as client asked | Removed that classes this parent (min-h-[600px])*/}
-      <div className=" relative h-full  flex items-stretch order-1 md:order-2 px-[52px]">
+      <div className=" relative h-full  flex items-stretch order-2 md:order-2 px-[20px] md:px-[52px]">
         {/* <div className="flex-1 overflow-hidden">
           <img src={heroImg} alt="Life coaching session"
             className="w-full h-full object-cover object-top" />
@@ -80,14 +80,14 @@ export default function Hero() {
           </cite>
         </div> */}
 
-        <div className="hero-anim animate-fade-up-5 hidden md:block text-center p-4 w-full z-10
+        <div className="hero-anim animate-fade-up-5 hidde md:block text-center p-4 w-full z-10
                         ">
-          <p className="font-serif text-base text-[18px] italic leading-[1.65] text-ink2">
+          <p className="font-serif text-base text-[22px] md:text-[26px] italic leading-[1.65] text-ink2">
             "My sessions were surprising and immensely fruitful. 
             As a person who is hopeful of a second career, Alexis understood my need for a plan. 
             She empathized and encouraged my life aspirations. Her guidance helped bring clarity and focus, which were the key missing ingredients for me."
           </p>
-          <cite className="block mt-4 text-[12px] tracking-[0.18em]  uppercase text-muted not-italic">
+          <cite className="block mt-4 text-[14px] md:text-[16px] tracking-[0.18em]  uppercase text-muted not-italic">
             {/* Lila C. — TV Animator &amp; Designer */}
             ~ Lila C. <br></br>
             TV animator and designer
