@@ -1,5 +1,6 @@
 import clientCircleImg from '../assets/circle-img.jpg';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import AnimatedText from './AnimatedText';
 
 const ArrowIcon = () => (
   <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
@@ -43,7 +44,8 @@ export default function Coaching() {
           <h2 className="reveal delay-1 font-serif font-light leading-[1.12]
                          text-[clamp(38px,4.5vw,64px)]">
             {/* Is life coaching<br />for <em className="italic">you?</em> */}
-            What Coaching helps with
+            {/* What Coaching helps with */}
+            <AnimatedText />
           </h2>
           {/* <p className="reveal delay-2 mt-9 text-base font-extralight leading-[2.1] text-ink2">
             I am here to help you explore barriers and navigate them with clarity and purpose.

@@ -1,5 +1,7 @@
 
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import FluidBlob from './FluidBlob';
+import FluidHeading from './FluidHeading.jsx';
 
 export default function About() {
   const ref = useScrollReveal();
@@ -9,14 +11,27 @@ export default function About() {
       <div className="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[30px] md:gap-[50px] items-start">
 
         {/* Left — bio */}
-        <div className='bg-paper p-5 border-2 border-solid border-gray-700'>
+        <div className='bg-paper about-inner p-5 border-2 border-solid border-gray-700'>
           <p className="reveal text-[11px] tracking-[0.28em] uppercase text-muted mb-7">
             About Alexis
           </p>
-          <h2 className="reveal delay-1 font-serif font-light leading-[1.2] mb-4 md:mb-10
+          {/* <h2 className="reveal delay-1 font-serif font-light leading-[1.2] mb-4 md:mb-10
                          text-[clamp(28px,3.5vw,48px)] text-ink">
             My own <i> journey</i> <br /> informs so much<br /> of what I do
-          </h2>
+          </h2> */}
+          {/* <FluidHeading /> */}
+
+          <div className="relative min-h-scree flex items-cente justify-cente">
+
+            <FluidBlob />
+            <FluidHeading />
+
+            {/* <h2 className="reveal delay-1 font-serif font-light leading-[1.2] mb-4 md:mb-10
+                         text-[clamp(28px,3.5vw,48px)] text-ink">
+               My own <i> journey</i> <br /> informs so much<br /> of what I do
+            </h2> */}
+
+          </div>
 
         </div>
 
