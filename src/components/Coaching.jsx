@@ -21,9 +21,9 @@ const SCENARIOS = [
   <>Are you chasing happiness?</>,
   <>Is your life lacking an element of fun?</>,
   <>Burnt out or stumped in your career?</>,
-  <>Looking to find a <span className="text-red-500">romantic</span> life partner?</>,
-  <>Is parenthood <span className="text-red-500">hijacking</span> your own needs?</>,
-  <>Does your college-bound or post-college child <span className="text-red-500">need</span> direction?</>,
+  <>Looking to find a <span className="text-normal">romantic</span> life partner?</>,
+  <>Is parenthood <span className="text-normal">hijacking</span> your own needs?</>,
+  <>Does your college-bound or post-college child <span className="text-normal">need</span> direction?</>,
 ];
 
 export default function Coaching() {
@@ -43,19 +43,21 @@ export default function Coaching() {
           <h2 className="reveal delay-1 font-serif font-light leading-[1.12]
                          text-[clamp(38px,4.5vw,64px)]">
             {/* Is life coaching<br />for <em className="italic">you?</em> */}
-            What Coaching helps with
+            {/* What Coaching helps with */}
+            What can coaching help with?
           </h2>
           {/* <p className="reveal delay-2 mt-9 text-base font-extralight leading-[2.1] text-ink2">
             I am here to help you explore barriers and navigate them with clarity and purpose.
             Together we identify how you can grow and connect with your natural creativity,
             strengths, and resourcefulness one step at a time.
           </p> */}
-          <p className="reveal delay-2 mt-9 text-base font-extralight leading-[2.1] text-ink2">
-          It’s not about what we do in our lives, it’s what we want our lives to be about <br></br>
-          When it comes to barriers we face in life, I have a knack for translating the complex into actionable simplicity—helping clarify and uncover what is lingering under the surface. <br></br> <br></br>
-
-          My approach stems from a sense of playfulness and curiosity rooted in disruption and depth. I am here to help you explore barriers and navigate them with clarity and purpose. <br></br> <br></br>
-
+          <p className="reveal delay-2 mt-9 text-base font-extralight leading-[1.60] text-ink2">
+          It’s not <i>about</i> what we <i>do</i> in our lives, it’s what we want our lives to be <i>about</i> </p>
+          <p className="reveal delay-2 mt-1 text-base font-extralight leading-[1.60] text-ink2">
+          When it comes to barriers we face in life, I have a knack for translating the complex into actionable simplicity—helping clarify and uncover what is lingering under the surface. </p>
+          <p className="reveal delay-2 mt-3 text-base font-extralight leading-[1.60] text-ink2">
+          My approach stems from a sense of playfulness and curiosity rooted in disruption and depth. I am here to help you explore barriers and navigate them with clarity and purpose. </p>
+          <p className="reveal delay-2 mt-3 text-base font-extralight leading-[1.60] text-ink2">
           Together we identify how you can grow and connect with your natural creativity, strengths, and resourcefulness one step at a time.
 
           </p>
@@ -108,7 +110,7 @@ export default function Coaching() {
           <ul className="mt-[52px] flex flex-col">
             {SCENARIOS.map((item, i) => (
               <li key={i}
-                className={`reveal delay-${Math.min(i + 1, 4)} flex items-start gap-5 py-[22px]
+                className={`reveal delay-${Math.min(i + 1, 4)} flex items-start gap-5 py-[14px]
                   border-b border-ink/10 first:border-t first:border-ink/10
                   transition-transform duration-300 hover:translate-x-1.5`}>
                 {/* <span className="font-serif text-[13px] italic text-muted min-w-[28px] pt-0.5">

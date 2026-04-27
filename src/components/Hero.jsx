@@ -1,8 +1,10 @@
-const ArrowIcon = () => (
-  <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
-    <path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
-  </svg>
-);
+// Button Removed as client asked 
+
+// const ArrowIcon = () => (
+//   <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+//     <path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
+//   </svg>
+// );
 
 export default function Hero() {
   return (
@@ -37,13 +39,13 @@ export default function Hero() {
         </p>
         
         <div className="hero-anim animate-fade-up-4 flex gap-4 flex-wrap mt-[25px]">
-          <a href="#connect"
+          {/* <a href="#connect"
             className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-ink text-white border border-ink
                         transition-colors">
             <span className='text'>Request a Session</span>
                         <span className='icon'><ArrowIcon /></span>
-          </a>
+          </a> */}
           <a href="#faq"
             className="btn-bg-hover inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-transparent text-ink border border-ink
@@ -80,14 +82,14 @@ export default function Hero() {
           </cite>
         </div> */}
 
-        <div className="hero-anim animate-fade-up-5 hidde md:block text-center p-4 w-full z-10
+        <div className="hero-anim animate-fade-up-5 hidde md:block text-center p-3 w-full md:max-w-[900px] m-auto z-10
                         ">
-          <p className="font-serif text-[22px] md:text-[26px] italic leading-[1.65] text-ink2">
+          <p className="font-serif text-[20px] md:text-[22px] italic leading-[1.50] text-ink2">
             "My sessions were surprising and immensely fruitful. 
             As a person who is hopeful of a second career, Alexis understood my need for a plan. 
             She empathized and encouraged my life aspirations. Her guidance helped bring clarity and focus, which were the key missing ingredients for me."
           </p>
-          <cite className="block mt-4 text-[14px] md:text-[16px] tracking-[0.18em]  uppercase text-muted not-italic">
+          <cite className="block mt-4 text-[14px] md:text-[14px] tracking-[0.18em]  uppercase text-muted not-italic">
             {/* Lila C. — TV Animator &amp; Designer */}
             ~ Lila C. <br></br>
             TV animator and designer

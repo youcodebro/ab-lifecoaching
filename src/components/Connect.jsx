@@ -1,4 +1,4 @@
-import profileImg from '../assets/profile-img.jpg';
+import profileImg from '../assets/profile.webp';
 import instaImg from '../assets/instagram.png';
 import linkedinImg from '../assets/linkedin.png';
 import mailImg from '../assets/mail.png';
@@ -34,7 +34,8 @@ export default function Connect() {
           <img src={profileImg} alt="Coaching illustration" className="max-w-[360px] w-full" />
         </div>
         <p className="mt-15 reveal delay-2 text-base font-extralight text-black tracking-[0.06em] mb-5">
-          To see what coaching is like, <br></br> book a discovery call.
+          {/* To see what coaching is like, <br></br> book a discovery call. */}
+          To see what coaching is like, <br></br> let’s book a discovery call.
         </p>
         {/* <p className="reveal delay-3 font-serif italic text-xl text-ink2 mb-[20px]">
           Reach out at{' '}
@@ -44,7 +45,18 @@ export default function Connect() {
           </a>
         </p> */}
 
-        <ul className='social-links flex gap-9 justify-center mb-7'>
+        <div className="d-inflex reveal delay-4 mb-7">
+          <a href="mailto:alexis@alexisbormann.com"
+            className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[11px] font-normal
+                       tracking-[0.2em] uppercase bg-ink text-white border border-ink
+                        transition-colors">
+                        <span className='text'>Alexis@AlexisBormann.com</span>
+                        <span className='icon'><ArrowIcon /></span>
+    
+          </a>
+        </div>
+
+        <ul className='social-links flex gap-9 justify-center mb-3'>
           <li>
             <a href="mailto:alexis@alexisbormann.com">
               <img src={mailImg} className='max-w-[40px]' alt="Alexis Bormann Email Address" />
@@ -62,16 +74,7 @@ export default function Connect() {
           </li>
         </ul>
 
-        <div className="reveal delay-4">
-          <a href="mailto:alexis@alexisbormann.com"
-            className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[11px] font-normal
-                       tracking-[0.2em] uppercase bg-ink text-white border border-ink
-                        transition-colors">
-                        <span className='text'>Request a Session</span>
-                        <span className='icon'><ArrowIcon /></span>
-    
-          </a>
-        </div>
+        
 
         
       </div>

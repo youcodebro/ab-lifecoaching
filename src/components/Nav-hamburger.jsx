@@ -28,13 +28,17 @@ export default function Nav() {
 
   return (
     <>
-      {/* Desktop nav */}
+      {/*
+        ─── ORIGINAL NAV (shown only at top — when NOT scrolled) ───────────────
+        Hidden on mobile always (mobile just uses the burger drawer).
+        Hidden on desktop once user scrolls (stuck = true).
+      */}
       <nav className={`navigation-wrap fixed top-0 left-0 right-0 z-[200] flex items-center justify-between
         md:px-[52px] px-[15px] transition-all duration-500
-        ${stuck
-          ? 'bg-white backdrop-blur-md shadow-[0_1px_0_rgba(19,18,16,0.1)]'
-          : 'bg-white'}
-        h-[76px] md:h-[76px]`}
+        bg-white
+        h-[76px] md:h-[76px]
+        ${stuck ? 'opacity-0 pointer-events-none' : 'opacity-100 pointer-events-auto'}
+        `}
         style={{ height: 'var(--nav-h)' }}
       >
         <a href="#hero" onClick={close}
@@ -42,7 +46,7 @@ export default function Nav() {
           <img src={LOGO_SRC} alt="Alexis Bormann" className="h-12 w-auto md:h-14 object-contain" />
         </a>
 
-        {/* Links — hidden on mobile */}
+        {/* Links — hidden on mobile, visible on desktop when NOT scrolled */}
         <ul className="mobile-nav-wrap hidden md:flex gap-9 list-none items-center">
           {NAV_LINKS.map((l) => (
             <li key={l.href}>
@@ -57,16 +61,20 @@ export default function Nav() {
           ))}
         </ul>
 
-        {/* CTA — hidden on mobile, fades in when stuck */}
-        <a href="#connect"
+        {/*
+          CTA button — desktop only, was fading in on scroll.
+          Now hidden because on scroll we switch to hamburger instead.
+          Keeping this commented in case client wants it back.
+        */}
+        {/* <a href="#connect"
           className={`btn-request btn-bg-hover hidden md:inline-flex items-center gap-2 px-6 py-3 text-[9px] font-normal
             tracking-[0.2em] uppercase bg-ink text-white border border-ink
             transition-all duration-300
             ${stuck ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
           <span className='text'> Request a Session</span>
-        </a>
+        </a> */}
 
-        {/* Burger — mobile only */}
+        {/* Burger — mobile only in top nav (original behaviour) */}
         <button
           className="btn-burger md:hidden flex flex-col gap-[5px] bg-transparent border-none p-1.5"
           aria-label="Toggle menu"
@@ -81,7 +89,29 @@ export default function Nav() {
         </button>
       </nav>
 
-      {/* Mobile drawer */}
+      {/*
+        ─── STICKY CORNER HAMBURGER (shown on scroll — both mobile & desktop) ──
+        Appears in top-right corner when user scrolls down (stuck = true).
+        On desktop this replaces the full nav.
+        On mobile this replaces the full sticky nav bar.
+      */}
+      <button
+        aria-label="Toggle menu"
+        onClick={() => setOpen((v) => !v)}
+        className={`fixed top-5 right-5 z-[210] flex flex-col gap-[5px] p-3
+          bg-white shadow-md rounded-full
+          transition-all duration-300
+          ${stuck ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+      >
+        <span className={`block w-[20px] h-px bg-ink transition-transform duration-300
+          ${open ? 'translate-y-[6px] rotate-45' : ''}`} />
+        <span className={`block w-[20px] h-px bg-ink transition-opacity duration-300
+          ${open ? 'opacity-0' : ''}`} />
+        <span className={`block w-[20px] h-px bg-ink transition-transform duration-300
+          ${open ? '-translate-y-[6px] -rotate-45' : ''}`} />
+      </button>
+
+      {/* Mobile / Hamburger drawer — same as original, used by both mobile & desktop now */}
       <div className={`fixed inset-0 z-[190] flex flex-col items-center justify-center gap-4
         bg-gray-800 transition-opacity duration-300
         ${open ? 'opacity-100 pointer-events-auto mobile-wrapper' : 'opacity-0 pointer-events-none'}`}>

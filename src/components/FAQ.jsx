@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import faqImg from '../assets/faq-img.jpg';
+import faqImg from '../assets/faq-bg-img-02.jpg';
 
 const FAQ_ITEMS = [
   {
-    q: 'What is the discovery called?',
+    q: 'What is coaching?',
     a: 'In the simplest of terms, life coaching is helping you clarify what you want and empowering you to move toward it.',
   },
   {
@@ -16,9 +16,14 @@ const FAQ_ITEMS = [
     a: "During a session, we identify what part of your life is feeling off or unfulfilled. This is done by asking powerful questions that stir your thinking and perspective. You are the one who finds the answers — I am there as your guide to help empower you to take action.",
   },
   {
-    q: 'What does a first session look like?',
+    q: 'What is the discovery call?',
     a: "We start wherever you are. No preparation needed. In our first conversation we'll explore what's on your mind, clarify what you're hoping to change or uncover, and see if working together feels like the right fit.",
   },
+  // {
+  //   q: 'What does a first session look like?',
+  //   a: "We start wherever you are. No preparation needed. In our first conversation we'll explore what's on your mind, clarify what you're hoping to change or uncover, and see if working together feels like the right fit.",
+  // },
+  
   // {
   //   q: 'How many sessions will I need?',
   //   a: "Every person is unique. Some find clarity in a single session; others benefit from ongoing support over several months. We'll assess together what serves you best as we go.",

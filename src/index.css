@@ -125,6 +125,9 @@ html {
     /* filter: brightness(0) invert(1); */
     background-color: #fff;
   }
+  .faq-thumb img {
+      width: 100%;
+  }
 
 }
 
