@@ -57,7 +57,7 @@ import gsap from "gsap";
 const FluidHeading = () => {
   const containerRef = useRef();
 
-  // ✅ Step 2: Animation (GSAP)
+  // ✅ Step 2
   useEffect(() => {
     const el = containerRef.current;
     const letters = el.querySelectorAll(".char");
@@ -96,7 +96,7 @@ const FluidHeading = () => {
     };
   }, []);
 
-  // ✅ Step 1: Split text INTO LETTERS (THIS IS WHERE YOU WERE CONFUSED)
+  // ✅ Step 1
   const splitText = (text) => {
     return text.split("").map((char, i) => (
       <span key={i} className="char inline-block will-change-transform">
