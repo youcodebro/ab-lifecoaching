@@ -11,7 +11,7 @@ export default function About() {
       <div className="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[30px] md:gap-[50px] items-start">
 
         {/* Left — bio */}
-        <div className='bg-paper about-inner p-5 border-2 border-solid border-gray-700'>
+        <div className='bg-paper about-inner p-5 border-2 border-solid border-gray-200'>
           <p className="reveal text-[11px] tracking-[0.28em] uppercase text-muted mb-7">
             About Alexis
           </p>

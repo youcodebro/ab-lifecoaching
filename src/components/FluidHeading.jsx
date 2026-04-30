@@ -1,29 +1,89 @@
+// import { useEffect, useRef } from "react";
+// import gsap from "gsap";
+
+// const FluidHeading = () => {
+//   const ref = useRef();
+
+//   useEffect(() => {
+//     const el = ref.current;
+
+//     const move = (e) => {
+//       const { offsetWidth } = el;
+//       const x = e.offsetX;
+
+//       const skew = ((x / offsetWidth) - 0.5) * 20;
+
+//       gsap.to(el, {
+//         skewX: skew,
+//         duration: 0.3,
+//         ease: "power2.out",
+//       });
+//     };
+
+//     const leave = () => {
+//       gsap.to(el, {
+//         skewX: 0,
+//         duration: 0.5,
+//       });
+//     };
+
+//     el.addEventListener("mousemove", move);
+//     el.addEventListener("mouseleave", leave);
+
+//     return () => {
+//       el.removeEventListener("mousemove", move);
+//       el.removeEventListener("mouseleave", leave);
+//     };
+//   }, []);
+
+//   return (
+//     <h2
+//       ref={ref}
+//       className="animate-heading font-serif font-light leading-[1.2] mb-4 md:mb-10 text-[clamp(28px,3.5vw,48px)] text-ink inline-block"
+//     >
+//       My own <i>journey</i> <br />
+//       informs so much <br />
+//       of what I do
+//     </h2>
+//   );
+// };
+
+// export default FluidHeading
+
+
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const FluidHeading = () => {
-  const ref = useRef();
+  const containerRef = useRef();
 
+  // ✅ Step 2: Animation (GSAP)
   useEffect(() => {
-    const el = ref.current;
+    const el = containerRef.current;
+    const letters = el.querySelectorAll(".char");
 
     const move = (e) => {
-      const { offsetWidth } = el;
-      const x = e.offsetX;
+      const bounds = el.getBoundingClientRect();
+      const x = e.clientX - bounds.left;
 
-      const skew = ((x / offsetWidth) - 0.5) * 20;
+      letters.forEach((char, i) => {
+        // const speed = (i % 5) * 2;
 
-      gsap.to(el, {
-        skewX: skew,
-        duration: 0.3,
-        ease: "power2.out",
+        gsap.to(char, {
+          y: Math.sin((x + i * 10) * 0.02) * 10,
+          x: Math.cos((x + i * 5) * 0.01) * 5,
+          duration: 0.4,
+          ease: "power2.out",
+        });
       });
     };
 
     const leave = () => {
-      gsap.to(el, {
-        skewX: 0,
-        duration: 0.5,
+      gsap.to(letters, {
+        x: 0,
+        y: 0,
+        duration: 0.6,
+        ease: "power3.out",
       });
     };
 
@@ -36,18 +96,28 @@ const FluidHeading = () => {
     };
   }, []);
 
+  // ✅ Step 1: Split text INTO LETTERS (THIS IS WHERE YOU WERE CONFUSED)
+  const splitText = (text) => {
+    return text.split("").map((char, i) => (
+      <span key={i} className="char inline-block will-change-transform">
+        {char === " " ? "\u00A0" : char}
+      </span>
+    ));
+  };
+
   return (
     <h2
-      ref={ref}
-      className="animate-heading font-serif font-light leading-[1.2] mb-4 md:mb-10 text-[clamp(28px,3.5vw,48px)] text-ink inline-block"
+      ref={containerRef}
+      className="font-serif font-light leading-[1.2] text-[clamp(28px,3.5vw,48px)] text-ink"
     >
-      My own <i>journey</i> <br />
-      informs so much <br />
-      of what I do
+      {splitText("My own ")}
+      <i>{splitText(" journey ")}</i>
+      <br />
+      {splitText("informs so much ")}
+      <br />
+      {splitText("of what I do")}
     </h2>
   );
 };
 
-export default FluidHeading
-
-
+export default FluidHeading;
