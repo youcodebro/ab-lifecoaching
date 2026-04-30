@@ -11,7 +11,7 @@ const NAV_LINKS = [
 ];
 
 export default function Nav() {
-  // Threshold = 120px so sticky nav appears after a noticeable scroll, not suddenly
+  // Sticky nav 
   const [stuck, setStuck] = useState(false);
   const [open,  setOpen]  = useState(false);
 
@@ -29,10 +29,7 @@ export default function Nav() {
 
   return (
     <>
-      {/*
-        ─── ORIGINAL FULL NAV (shown at top when NOT scrolled) ─────────────────
-        Fades out once user scrolls past 120px.
-      */}
+     
       <nav
         className={`navigation-wrap fixed top-0 left-0 right-0 z-[200] flex items-center justify-between
           md:px-[52px] px-[15px] transition-all duration-500 bg-white
@@ -62,7 +59,7 @@ export default function Nav() {
         </ul>
 
         {/*
-          Original CTA — commented out, now lives in the sticky contained header below.
+          Original CTA 
         */}
         {/* <a href="#connect"
           className="btn-request btn-bg-hover hidden md:inline-flex items-center gap-2 px-6 py-3
@@ -86,11 +83,8 @@ export default function Nav() {
       </nav>
 
       {/*
-        ─── STICKY CONTAINED FLOATING HEADER (on scroll — mobile & desktop) ────
-        - Not full width — centred with max-width container, rounded pill style
-        - Left:  Logo
-        - Right: Hamburger icon + "Request a Session" button
-        - Fades in smoothly after 120px scroll (not sudden)
+        STICKY CONTAINED FLOATING HEADER 
+        
       */}
       <div
         className={`fixed top-3 left-1/2 -translate-x-1/2 z-[210]
@@ -124,7 +118,7 @@ export default function Nav() {
               ${open ? '-translate-y-[6px] -rotate-45' : ''}`} />
           </button>
 
-          {/* Request a Session button — same style as original */}
+          {/* Request Button */}
           <a href="#connect"
             className="btn-request btn-bg-hover inline-flex items-center gap-2
               px-5 py-2.5 text-[9px] font-normal tracking-[0.2em] uppercase
@@ -136,8 +130,8 @@ export default function Nav() {
       </div>
 
       {/*
-        ─── FULL-SCREEN DRAWER ──────────────────────────────────────────────────
-        Triggered by hamburger in both top nav (mobile) and sticky header.
+        FULL-SCREEN DRAWER 
+        
       */}
       <div className={`fixed inset-0 z-[190] flex flex-col items-center justify-center gap-4
         bg-gray-800 transition-opacity duration-300
