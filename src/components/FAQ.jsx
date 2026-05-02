@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import faqImg from '../assets/faq-bg-img-02.jpg';
+import faqImgD from '../assets/faq-cube-d.webp';
+import faqImgM from '../assets/faq-cube-m.webp';
 
 const FAQ_ITEMS = [
   {
@@ -121,8 +122,10 @@ export default function FAQ() {
 
           
           <div className='faq-thumb'>
-            <img src={faqImg} alt="FAQ"
-              className=" object-cover object-top" />
+            <img src={faqImgD} alt="FAQ"
+              className="faq-d object-cover object-top" />
+              <img src={faqImgM} alt="FAQ"
+              className="faq-m object-cover object-top" />
           </div>
           {/* <div className="reveal delay-2 border-t border-ink/10">
             {col2.map(item => <FAQItem key={item.q} {...item} />)}

@@ -87,11 +87,11 @@ export default function Nav() {
         
       */}
       <div
-        className={`fixed top-3 left-1/2 -translate-x-1/2 z-[210]
+        className={`fixed top-2 md:top-3 left-1/2 -translate-x-1/2 z-[210]
           w-[calc(100%-32px)] max-w-[1200px]
           flex items-center justify-between
           px-5 md:px-8 h-[64px]
-          bg-white shadow-lg rounded-full
+          bg-white shadow-lg rounded-full md:rounded-sm
           transition-all duration-500
           ${stuck ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-2'}`}
       >

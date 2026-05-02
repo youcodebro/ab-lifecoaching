@@ -92,6 +92,13 @@ html {
   left: 0;
   right: inherit;
 }
+
+.faq-d{
+  display: block;
+}
+.faq-m{
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   html,body{
     overflow-x: hidden;
@@ -142,6 +149,12 @@ html {
   .faq-thumb{
     order: -1;
     /* margin-bottom: 20px; */
+  }
+  .faq-d{
+    display: none;
+  }
+  .faq-m{
+    display: block;
   }
   div br{
     display: none;
