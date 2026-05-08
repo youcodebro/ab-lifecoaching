@@ -99,6 +99,15 @@ html {
 .faq-m{
   display: none;
 }
+
+.animate-text{
+  transition: all 0.3s ease-in;
+  transform-origin: top right;
+  display: inline-flex;
+}
+.animate-head .animate-text:hover{
+  transform: translateY(-4px) rotate(3deg);
+}
 @media screen and (max-width: 1024px) {
   html,body{
     overflow-x: hidden;

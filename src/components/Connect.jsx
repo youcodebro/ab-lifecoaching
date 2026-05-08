@@ -1,8 +1,10 @@
+import { useState} from "react";
 import profileImg from '../assets/profile.webp';
 import instaImg from '../assets/instagram.png';
 import linkedinImg from '../assets/linkedin.png';
 import mailImg from '../assets/mail.png';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { Copy, Mail} from "lucide-react";
 
 const ArrowIcon = () => (
   <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
@@ -11,6 +13,7 @@ const ArrowIcon = () => (
 );
 
 export default function Connect() {
+  const [copied, setCopied] = useState(false);
   const ref = useScrollReveal();
 
   return (
@@ -50,8 +53,8 @@ export default function Connect() {
             className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-ink text-white border border-ink
                         transition-colors">
-                        <span className='text'>Alexis@AlexisBormann.com</span>
-                        <span className='icon'><ArrowIcon /></span>
+                        <span className='text'>Request A Session</span>
+                        <span className='icon'> <Mail /> </span>
     
           </a>
         </div>
@@ -73,6 +76,38 @@ export default function Connect() {
             </a>
           </li>
         </ul>
+
+          {/* Email Old Code */}
+          {/* <a href="mailto:alexis@alexisbormann.com"
+            className="border-b border-ink/15 pb-0.5 hover:border-ink transition-colors">
+            Alexis@AlexisBormann.com
+          </a> */}
+
+          <div className="flex relative items-center justify-center gap-2 mt-6">
+              <a
+                href="mailto:alexis@alexisbormann.com"
+                className="text-black"
+              >
+                Alexis@AlexisBormann.com
+                
+                {copied && (
+                  <span className="absolute -bottom-6 left-0 right-0 text-md text-blue-500">
+                    Email copied ✓
+                  </span>
+                )}
+              </a>
+
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText("alexis@alexisbormann.com");
+                  setCopied(true);
+                  setTimeout(() => setCopied(false), 1500);
+                }}
+                className="opacity-100 group-hover:opacity-100 transition"
+              >
+                <Copy className="w-5 h-5 text-grey-400 hover:text-blue-600" />
+              </button>
+            </div>
 
         
 

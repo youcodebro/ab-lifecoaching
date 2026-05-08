@@ -1,4 +1,5 @@
-// Button Removed as client asked 
+
+// import DrawUnderline from "./DrawUnderline";
 
 // const ArrowIcon = () => (
 //   <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
@@ -6,7 +7,10 @@
 //   </svg>
 // );
 
+// const text = "Sometimes life just needs a";
+
 export default function Hero() {
+  
   return (
     <section id="hero"
       className="banner-section min-h-screen grid grid-cols-1 md:grid-cols-1 items-center overflow-hidden
@@ -27,10 +31,30 @@ export default function Hero() {
                        tracking-[-0.01em] text-[clamp(52px,6.5vw,96px)]">
           Sometimes<br />life just<br />needs a <em className="italic">nudge</em>
         </h1> */}
-        <h1 className="hero-anim animate-fade-up-2 font-serif font-light leading-[1.04]
+        <h1 className="hero-anim animate-head animate-fade-up-2 font-serif font-light leading-[1.04]
                        tracking-[-0.01em] text-[clamp(52px,6.5vw,96px)]">
-          Sometimes life just needs a <em className="italic">nudge</em>
+          Sometimes life just needs a <em className="italic animate-text">nudge</em>
         </h1>
+        
+        {/* Animation Heading */}
+        {/* <h1 className="hero-anim animate-fade-up-2 font-serif font-light leading-[1.04] tracking-[-0.01em] text-[clamp(52px,6.5vw,96px)]">
+      
+          {text.split(" ").map((word, i) => (
+            <span key={i} className="word">
+              {word.split("").map((char, j) => (
+                <span key={j} className="letter">
+                  {char}
+                </span>
+              ))}
+              &nbsp;
+            </span>
+          ))}
+
+          
+          <DrawUnderline text="nudge" />
+          
+
+        </h1> */}
 
         <p className="hero-anim animate-fade-up-3 mt-5 text-base font-extralight leading-8
                       tracking-[0.04em] text-ink2 ">
@@ -82,14 +106,14 @@ export default function Hero() {
           </cite>
         </div> */}
 
-        <div className="hero-anim animate-fade-up-5 hidde md:block text-center p-3 w-full md:max-w-[900px] m-auto z-10
+        <div className="hero-anim animate-fade-up-5 hidde md:block text-center p-4 w-full z-10
                         ">
-          <p className="font-serif text-[20px] md:text-[22px] italic leading-[1.50] text-ink2">
+          <p className="font-serif text-[22px] md:text-[22px] italic leading-[1.65] text-ink2">
             "My sessions were surprising and immensely fruitful. 
             As a person who is hopeful of a second career, Alexis understood my need for a plan. 
             She empathized and encouraged my life aspirations. Her guidance helped bring clarity and focus, which were the key missing ingredients for me."
           </p>
-          <cite className="block mt-4 text-[14px] md:text-[14px] tracking-[0.18em]  uppercase text-muted not-italic">
+          <cite className="block mt-4 text-[14px] md:text-[16px] tracking-[0.18em]  uppercase text-muted not-italic">
             {/* Lila C. — TV Animator &amp; Designer */}
             ~ Lila C. <br></br>
             TV animator and designer

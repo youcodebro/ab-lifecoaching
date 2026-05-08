@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 
-const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo-updated.webp`;
+// const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo-updated.webp`;
+const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo-black-transparent.webp`;
+
 
 const NAV_LINKS = [
   { label: 'Is Coaching For You?', href: '#coaching' },
@@ -40,7 +42,7 @@ export default function Nav() {
         {/* Logo */}
         <a href="#hero" onClick={close}
           className="logo shrink-0 flex items-center leading-none">
-          <img src={LOGO_SRC} alt="Alexis Bormann" className="h-12 w-auto md:h-14 object-contain" />
+          <img src={LOGO_SRC} alt="Alexis Bormann" className="h-18 w-auto md:h-20 object-contain" />
         </a>
 
         {/* Nav links — desktop only */}
@@ -61,11 +63,11 @@ export default function Nav() {
         {/*
           Original CTA 
         */}
-        {/* <a href="#connect"
+        <a href="#connect"
           className="btn-request btn-bg-hover hidden md:inline-flex items-center gap-2 px-6 py-3
             text-[9px] font-normal tracking-[0.2em] uppercase bg-ink text-white border border-ink">
           <span className='text'>Request a Session</span>
-        </a> */}
+        </a>
 
         {/* Burger — mobile only in top nav */}
         <button
@@ -87,10 +89,10 @@ export default function Nav() {
         
       */}
       <div
-        className={`fixed top-2 md:top-3 left-1/2 -translate-x-1/2 z-[210]
-          w-[calc(100%-32px)] max-w-[1200px]
+        className={`fixed top-2 md:top-0 left-1/2 -translate-x-1/2 z-[210]
+          w-[calc(100%-0px)] max-w-full
           flex items-center justify-between
-          px-5 md:px-8 h-[64px]
+          px-5 md:px-8 h-[70px] md:h-[76px]
           bg-white shadow-lg rounded-full md:rounded-sm
           transition-all duration-500
           ${stuck ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-2'}`}
@@ -98,7 +100,7 @@ export default function Nav() {
         {/* Logo — left */}
         <a href="#hero" onClick={close}
           className="logo shrink-0 flex items-center leading-none">
-          <img src={LOGO_SRC} alt="Alexis Bormann" className="h-9 w-auto md:h-10 object-contain" />
+          <img src={LOGO_SRC} alt="Alexis Bormann" className="h-14 w-auto md:h-20 object-contain" />
         </a>
 
         {/* Right side: hamburger + CTA */}
