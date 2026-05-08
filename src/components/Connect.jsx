@@ -6,11 +6,11 @@ import mailImg from '../assets/mail.png';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { Copy, Mail} from "lucide-react";
 
-const ArrowIcon = () => (
-  <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
-    <path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
-  </svg>
-);
+// const ArrowIcon = () => (
+//   <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+//     <path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
+//   </svg>
+// );
 
 export default function Connect() {
   const [copied, setCopied] = useState(false);
