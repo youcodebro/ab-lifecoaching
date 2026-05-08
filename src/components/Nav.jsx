@@ -14,18 +14,49 @@ const NAV_LINKS = [
 
 export default function Nav() {
   // Sticky nav 
-  const [stuck, setStuck] = useState(false);
-  const [open,  setOpen]  = useState(false);
+  // const [stuck, setStuck] = useState(false);
+  // const [open,  setOpen]  = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setStuck(window.scrollY > 120);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  // useEffect(() => {
+  //   const onScroll = () => setStuck(window.scrollY > 120);
+  //   window.addEventListener('scroll', onScroll, { passive: true });
+  //   return () => window.removeEventListener('scroll', onScroll);
+  // }, []);
 
-  useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : '';
-  }, [open]);
+  // useEffect(() => {
+  //   document.body.style.overflow = open ? 'hidden' : '';
+  // }, [open]);
+
+    const [stuck, setStuck] = useState(false);
+    const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        // Mobile & small screens => always fixed
+        if (window.innerWidth < 768) {
+          setStuck(true);
+        } 
+        // Large screens => fixed after scroll
+        else {
+          setStuck(window.scrollY > 120);
+        }
+      };
+
+      // Run once on load
+      handleScroll();
+
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      window.addEventListener('resize', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener('resize', handleScroll);
+      };
+    }, []);
+
+    useEffect(() => {
+      document.body.style.overflow = open ? 'hidden' : '';
+    }, [open]);
 
   const close = () => setOpen(false);
 
@@ -33,8 +64,9 @@ export default function Nav() {
     <>
      
       <nav
-        className={`navigation-wrap fixed top-0 left-0 right-0 z-[200] flex items-center justify-between
-          md:px-[52px] px-[15px] transition-all duration-500 bg-white
+        className={`navigation-wrap fixed top-0 
+         left-0 right-0 z-[200] flex items-center justify-between
+          md:px-[35px] px-[15px] transition-all duration-500 bg-white
           h-[76px] md:h-[76px]
           ${stuck ? 'opacity-0 pointer-events-none' : 'opacity-100 pointer-events-auto'}`}
         style={{ height: 'var(--nav-h)' }}
@@ -92,7 +124,7 @@ export default function Nav() {
         className={`fixed top-2 md:top-0 left-1/2 -translate-x-1/2 z-[210]
           w-[calc(100%-0px)] max-w-full
           flex items-center justify-between
-          px-5 md:px-8 h-[70px] md:h-[76px]
+          px-5 md:px-8 h-[64px] md:h-[76px]
           bg-white shadow-lg rounded-full md:rounded-sm
           transition-all duration-500
           ${stuck ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-2'}`}

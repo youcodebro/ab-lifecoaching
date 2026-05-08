@@ -10,7 +10,7 @@ const LINKS = [
 ];
 
 export default function Footer() {
-  // const year = new Date().getFullYear();
+  const year = new Date().getFullYear();
 
   return (
     <footer className="border-t border-ink/10 bg-white px-[30px] md:px-[52px] py-4 md:py-10">
@@ -30,9 +30,9 @@ export default function Footer() {
           ))}
         </ul>
 
-        {/* <span className="text-[10px] tracking-[0.15em] uppercase text-muted md:text-right text-center">
+        <span className="text-[10px] tracking-[0.15em] uppercase text-muted md:text-right text-center">
           © {year} Alexis Bormann
-        </span> */}
+        </span>
       </div>
 
       <div className="md:pt-8 md:mt-8 pt-4 mt-4 border-t border-ink/20 text-center">
