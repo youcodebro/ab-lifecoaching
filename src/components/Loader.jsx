@@ -32,9 +32,10 @@ export default function Loader() {
       </div>
 
       {/* Tagline */}
-      <p className="font-sans text-[10px] font-light tracking-[0.36em] uppercase
-                    text-white/40 opacity-0 animate-loader-tag">
-        Life Coaching with Alexis Bormann
+      <p className="font-sans text-[16px] font-light tracking-[0.38em] uppercase
+                    text-white/80 opacity-0 animate-loader-tag">
+        {/* Life Coaching with Alexis Bormann */}
+        What’s possible in your life?
       </p>
 
       {/* Progress bar */}

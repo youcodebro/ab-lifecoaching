@@ -5,11 +5,34 @@ import faqImgM from '../assets/faq-cube-m.webp';
 
 const FAQ_ITEMS = [
   {
-    q: 'What is coaching?',
-    a: 'In the simplest of terms, life coaching is helping you clarify what you want and empowering you to move toward it.',
+    q: 'What is life coaching?',
+    a: `In the simplest of terms, life coaching is a place of
+    exploration, where we clarify what you want and
+    empower you toward it. 
+
+    The intention of life coaching is to guide you to
+    learn more about yourself. To peel away the top
+    layer and go deeper to rewire habits that no longer
+    serve you. This is where lasting transformation is
+    possible.
+
+    The coach is there as your partner in the process
+    of tapping into your natural creativity and
+    resourcefulness. By doing this you identify the
+    actions you will take, which fuels you with
+    achieving what you want.
+
+    Unlike consulting or mentoring, the coach is not
+    there to give you answers or tell you how to get
+    there.
+
+    I do work with clients who are seeking a
+    consultant or mentor. Setting these expectations
+    upfront helps us both design how we will work.`,
+    // a: 'In the simplest of terms, life coaching is helping you clarify what you want and empowering you to move toward it.',
   },
   {
-    q: 'How is it different from therapy?',
+    q: 'Life coaching vs therapy?',
     a: "It's helpful to think of it like this — therapy is like going to physical therapy. It often stems from a past event and focuses on healing. Life coaching is like going to a personal trainer, which focuses on moving from functional to optimal.",
   },
   {
@@ -42,7 +65,7 @@ function FAQItem({ q, a, isOpen, onClick }) {
       <button
         onClick={onClick}
         className="w-full flex justify-between items-center gap-5 py-[26px]
-                   text-base font-light text-ink text-left hover:text-ink2 transition-colors"
+                   text-[16px] md:text-[18px] font-medium text-ink text-left hover:text-ink2 transition-colors"
       >
         {q}
         <span className={`w-6 h-6 shrink-0 rounded-full border border-ink/15 flex items-center
@@ -52,8 +75,9 @@ function FAQItem({ q, a, isOpen, onClick }) {
         </span>
       </button>
       <div className="overflow-hidden transition-all duration-500"
-        style={{ maxHeight: isOpen ? '400px' : '0' }}>
-        <p className="pb-[26px] text-base font-extralight leading-8 text-ink2">{a}</p>
+        style={{ maxHeight: isOpen ? '750px' : '0' }}>
+        <p className="pb-[26px] text-[14px] md:text-[16px] font-normal leading-8 text-ink2 md:whitespace-pre-line">{a}</p>
+        
       </div>
     </div>
 
@@ -97,12 +121,13 @@ export default function FAQ() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className='faq-left p-[30px] bg-paper'>
             <div className='faq-content'>
-                <p className="reveal text-[11px] tracking-[0.28em] uppercase text-muted mb-6">
+                <p className="reveal text-[12px] tracking-[0.28em] uppercase text-muted mb-6">
                   Common Questions
                 </p>
                 <h2 className="reveal delay-1 font-serif font-light leading-[1.15] md:mb-[60px] mb-30px]
                               text-[clamp(32px,4vw,56px)]">
-                  Questions about <br /><em className="italic">coaching</em>
+                  {/* Questions about <br /><em className="italic">coaching</em> */}
+                  Seeking answers is the first step
                 </h2>
               </div>
               <div className="reveal border-t border-ink/10">

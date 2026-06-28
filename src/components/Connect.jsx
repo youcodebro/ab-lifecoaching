@@ -16,6 +16,14 @@ export default function Connect() {
   const [copied, setCopied] = useState(false);
   const ref = useScrollReveal();
 
+  // Create a reusable function to handle the copy action
+const handleCopyEmail = () => {
+  navigator.clipboard.writeText("alexis@alexisbormann.com");
+  setCopied(true);
+  setTimeout(() => setCopied(false), 1500);
+};
+
+
   return (
     <section id="connect" ref={ref}
       className="relative overflow-hidden bg-white pt-[40px] md:pt-[80px] pb-[30px] md:pb-[60px] px-[30px] md:px-[52px] text-center">
@@ -26,17 +34,17 @@ export default function Connect() {
         style={{ background: 'radial-gradient(circle, rgba(240,237,230,.85) 0%, transparent 70%)' }} />
 
       <div className="relative z-10">
-        <p className="reveal text-[14px] tracking-[0.28em] uppercase text-muted mb-6">
+        <p className="reveal text-[18px] tracking-[0.24em] font-medium uppercase mb-4">
           Connect
         </p>
         {/* <h2 className="reveal delay-1 font-serif font-light leading-[1.06] mb-8 text-ink
                        text-[clamp(42px,7vw,100px)]">
           Ready for<br />your <em className="italic">nudge?</em>
         </h2> */}
-        <div className="reveal flex justify-center mt-10 mb-5">
+        <div className="reveal flex justify-center mt-6 mb-5">
           <img src={profileImg} alt="Coaching illustration" className="max-w-[360px] w-full" />
         </div>
-        <p className="mt-15 reveal delay-2 text-base font-extralight text-black tracking-[0.06em] mb-5">
+        <p className="mt-15 reveal delay-2 text-base font-normal text-black tracking-[0.06em] mb-5">
           {/* To see what coaching is like, <br></br> book a discovery call. */}
           To see what coaching is like, <br></br> let’s book a discovery call.
         </p>
@@ -50,6 +58,7 @@ export default function Connect() {
 
         <div className="d-inflex reveal delay-4 mb-7">
           <a href="mailto:alexis@alexisbormann.com"
+          onClick={handleCopyEmail}
             className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-ink text-white border border-ink
                         transition-colors">
@@ -61,17 +70,29 @@ export default function Connect() {
 
         <ul className='social-links flex gap-9 justify-center mb-3'>
           <li>
-            <a href="mailto:alexis@alexisbormann.com">
+            <a 
+              href="mailto:alexis@alexisbormann.com"
+              onClick={handleCopyEmail}
+              
+              >
               <img src={mailImg} className='max-w-[40px]' alt="Alexis Bormann Email Address" />
             </a>
           </li>
           <li>
-            <a href='https://www.linkedin.com/in/alexisbormann/'>
+            <a 
+              href='https://www.linkedin.com/in/alexisbormann/'
+              target="_blank" 
+              rel="noreferrer"
+              >
               <img src={linkedinImg} className='max-w-[40px]' alt="Alexis Bormann Linkedin" />
             </a>
           </li>
           <li>
-            <a href='https://www.instagram.com/alexislifecoach/'>
+            <a 
+              href='https://www.instagram.com/alexislifecoach/'
+              target="_blank" 
+              rel="noreferrer"
+              >
               <img src={instaImg} className='max-w-[40px]' alt="Alexis Bormann Instagram" />
             </a>
           </li>
@@ -86,6 +107,7 @@ export default function Connect() {
           <div className="flex relative items-center justify-center gap-2 mt-6">
               <a
                 href="mailto:alexis@alexisbormann.com"
+                onClick={handleCopyEmail}
                 className="text-black"
               >
                 Alexis@AlexisBormann.com
@@ -107,6 +129,13 @@ export default function Connect() {
               >
                 <Copy className="w-5 h-5 text-grey-400 hover:text-blue-600" />
               </button>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4 mt-6 max-w-[400px] mx-auto">
+              <p className="text-[14px] font-normal">Lifepath & Career Coach</p>
+              <p className="text-[14px] font-normal">Resumé Coach</p>
+              <p className="text-[14px] font-normal">Mindset Coach</p>
+              <p className="text-[14px] font-normal">Somatic Coaching</p>
             </div>
 
         

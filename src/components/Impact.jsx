@@ -5,7 +5,7 @@ export default function Impact() {
 
   return (
     <section id="impact" ref={ref}
-      className="py-[20px] impact-section">
+      className="py-[20px] scroll-mt-20 impact-section">
       <div className="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_1.6fr] gap-[50px] items-start">
 
         {/* Left */}
@@ -13,9 +13,10 @@ export default function Impact() {
           <p className="reveal text-[11px] tracking-[0.28em] uppercase text-white/80 mb-7">
             Creating Impact
           </p>
-          <h2 className="reveal delay-1 font-serif font-light leading-[1.2] text-white
-                         text-[clamp(32px,3.5vw,52px)]">
-            The <i> impact </i><br />of coaching
+          <h2 className="reveal delay-1 font-serif font-light leading-[1.6] text-white
+                         text-[clamp(32px,3.6vw,52px)]">
+            The <i> impact </i> <br /> of <span className='opacity-0'>i</span>life coaching 
+            {/* The <i>impact </i> <br /> of life coaching */}
           </h2>
         </div>
 
@@ -28,28 +29,28 @@ export default function Impact() {
           </p>
 
           <div className="flex flex-col gap-3">
-            <p className="reveal delay-1 text-base font-extralight leading-[2.1] text-gray/65">
+            <p className="reveal delay-1 text-base font-normal leading-[2.1] text-ink2">
               A mother asked me to help her 17-year-old daughter get into college.
               At first, I kinda chuckled at such a tall order, but what came next was pretty fascinating.
             </p>
-            <p className="reveal delay-2 text-base font-extralight leading-[2.1] text-gray/65">
+            <p className="reveal delay-2 text-base font-normal leading-[2.1] text-ink2">
               Like so many of her classmates, the daughter felt the pressure to know what profession
               she should do. It was clear that this was dampening her confidence and would likely
               make her a bit wobbly during college interviews.
             </p>
-            <p className="reveal delay-3 text-base font-extralight leading-[2.1] text-gray/65">
-              <strong className="text-gray/70 font-bold block mb-2 text-[11px] tracking-[0.1em] uppercase">
+            <p className="reveal delay-3 text-base font-normal leading-[2.1] text-ink2">
+              {/* <strong className="text-gray/70 font-bold block mb-2 text-[11px] tracking-[0.1em] uppercase">
                 It's not about figuring out what they want to do
-              </strong>
+              </strong> */}
               Over the course of the summer, the daughter and I established a rhythm during our sessions
               that either clarified her innate talents and interests or dove deeper into any ideas we had
               identified. Each session helped unravel her sense of self — even at such a young age, she
               was able to bring to the table what made her tick.
             </p>
-            <p className="reveal delay-4 text-base font-extralight leading-[2.1] text-gray/65">
-              <strong className="text-gray/70 font-bold block mb-2 text-[11px] tracking-[0.1em] uppercase">
+            <p className="reveal delay-4 text-base font-normal leading-[2.1] text-ink2">
+              {/* <strong className="text-gray/70 font-bold block mb-2 text-[11px] tracking-[0.1em] uppercase">
                 A clear impact
-              </strong>
+              </strong> */}
               During her interviews, an admissions officer commented they were impressed to meet a young
               person who had such a clear sense of self. Even though her personality wasn't outwardly
               passionate, she had a unique "spike" that differentiated her from her peers. It wasn't

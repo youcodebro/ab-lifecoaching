@@ -5,7 +5,7 @@ const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo-black-transparent.webp
 
 
 const NAV_LINKS = [
-  { label: 'Is Coaching For You?', href: '#coaching' },
+  { label: 'Is life coaching for me?', href: '#coaching' },
   { label: 'Creating Impact',      href: '#impact'   },
   { label: 'Common Questions',     href: '#faq'      },
   { label: 'About',                href: '#about'    },
@@ -82,7 +82,7 @@ export default function Nav() {
           {NAV_LINKS.map((l) => (
             <li key={l.href}>
               <a href={l.href}
-                className="text-[10px] font-light tracking-[0.18em] uppercase text-ink
+                className="text-[10px] font-normal tracking-[0.18em] uppercase text-ink
                            relative pb-0.5 after:content-[''] after:absolute after:bottom-[-2px]
                            after:left-0 after:w-0 after:h-px after:bg-ink
                            after:transition-all after:duration-300 hover:after:w-full">

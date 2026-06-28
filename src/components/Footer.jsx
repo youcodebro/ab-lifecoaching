@@ -4,7 +4,7 @@ const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo-updated.webp`;
 const LINKS = [
   { label: 'Coaching', href: '#coaching' },
   { label: 'Impact',   href: '#impact'   },
-  { label: 'FAQ',      href: '#faq'      },
+  { label: 'Questions',      href: '#faq'      },
   { label: 'About',    href: '#about'    },
   { label: 'Connect',  href: '#connect'  },
 ];
@@ -16,14 +16,14 @@ export default function Footer() {
     <footer className="border-t border-ink/10 bg-white px-[30px] md:px-[52px] py-4 md:py-10">
       <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-6">
         <a href="#hero" className="inline-flex items-center justify-self-center md:justify-self-start">
-          <img src={LOGO_SRC} alt="Alexis Bormann" className="h-10 w-auto md:h-11 object-contain" />
+          <img src={LOGO_SRC} alt="Alexis Bormann" className="h-14 w-auto md:h-16 object-contain" />
         </a>
 
         <ul className="flex gap-7 list-none justify-center flex-wrap">
           {LINKS.map(l => (
             <li key={l.href}>
               <a href={l.href}
-                className="text-[10px] tracking-[0.2em] uppercase text-muted hover:text-ink transition-colors">
+                className="text-[11px] md:text-[12px] tracking-[0.2em] uppercase font-normal text-gray-600 hover:text-ink transition-colors">
                 {l.label}
               </a>
             </li>

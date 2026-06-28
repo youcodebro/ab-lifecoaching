@@ -56,8 +56,8 @@ export default function Hero() {
 
         </h1> */}
 
-        <p className="hero-anim animate-fade-up-3 mt-5 text-base font-extralight leading-8
-                      tracking-[0.04em] text-ink2 ">
+        <p className="hero-anim animate-fade-up-3 mt-5 text-base font-normal leading-8
+                      tracking-[0.06em] text-gray-900 ">
           Clarifying what matters. Uncovering what's possible.
           {/* Starting exactly where you are. */}
         </p>
@@ -70,12 +70,12 @@ export default function Hero() {
             <span className='text'>Request a Session</span>
                         <span className='icon'><ArrowIcon /></span>
           </a> */}
-          <a href="#faq"
+          {/* <a href="#faq"
             className="btn-bg-hover inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-transparent text-ink border border-ink
                         hover:text-white transition-colors">
             What is life coaching?
-          </a>
+          </a> */}
         </div>
 
         {/* Scroll indicator */}
@@ -113,7 +113,7 @@ export default function Hero() {
             As a person who is hopeful of a second career, Alexis understood my need for a plan. 
             She empathized and encouraged my life aspirations. Her guidance helped bring clarity and focus, which were the key missing ingredients for me."
           </p>
-          <cite className="block mt-4 text-[14px] md:text-[16px] tracking-[0.18em]  uppercase text-muted not-italic">
+          <cite className="block mt-4 text-[12px] md:text-[13px] tracking-[0.20em]  uppercase text-gray-700 not-italic">
             {/* Lila C. — TV Animator &amp; Designer */}
             ~ Lila C. <br></br>
             TV animator and designer

@@ -36,28 +36,28 @@ export default function Coaching() {
 
         {/* Left */}
         <div>
-          <p className="reveal text-[11px] tracking-[0.28em] uppercase text-muted mb-7">
-            Is Life Coaching For You?
+          <p className="reveal text-[12px] tracking-[0.28em] uppercase text-gray-600 mb-7">
+          Is life coaching for me?
 
           </p>
           <h2 className="reveal delay-1 font-serif font-light leading-[1.12]
                          text-[clamp(38px,4.5vw,64px)]">
-            {/* Is life coaching<br />for <em className="italic">you?</em> */}
-            {/* What Coaching helps with */}
-            What can coaching help with?
+            {/* What can coaching help with? */}
+            What does life coaching help with?
           </h2>
           {/* <p className="reveal delay-2 mt-9 text-base font-extralight leading-[2.1] text-ink2">
             I am here to help you explore barriers and navigate them with clarity and purpose.
             Together we identify how you can grow and connect with your natural creativity,
             strengths, and resourcefulness one step at a time.
           </p> */}
-          <p className="reveal delay-2 mt-9 text-base font-extralight leading-[1.60] text-ink2">
-          It’s not <i>about</i> what we <i>do</i> in our lives, it’s what we want our lives to be <i>about</i> </p>
-          <p className="reveal delay-2 mt-1 text-base font-extralight leading-[1.60] text-ink2">
+          <p className="reveal delay-2 mt-9 text-base font-normal leading-[1.60] text-ink2">
+          It’s not about what we do in our lives, it’s what we want our lives to be about. </p>
+   
+          <p className="reveal delay-2 mt-1 text-base font-normal leading-[1.60] text-ink2">
           When it comes to barriers we face in life, I have a knack for translating the complex into actionable simplicity—helping clarify and uncover what is lingering under the surface. </p>
-          <p className="reveal delay-2 mt-3 text-base font-extralight leading-[1.60] text-ink2">
+          <p className="reveal delay-2 mt-3 text-base font-normal leading-[1.60] text-ink2">
           My approach stems from a sense of playfulness and curiosity rooted in disruption and depth. I am here to help you explore barriers and navigate them with clarity and purpose. </p>
-          <p className="reveal delay-2 mt-3 text-base font-extralight leading-[1.60] text-ink2">
+          <p className="reveal delay-2 mt-3 text-base font-normal leading-[1.60] text-ink2">
           Together we identify how you can grow and connect with your natural creativity, strengths, and resourcefulness one step at a time.
 
           </p>
@@ -122,11 +122,11 @@ export default function Coaching() {
           </ul>
 
           <div className="reveal mt-[52px]">
-            <a href="#connect"
+            <a href="#faq"
               className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
                          tracking-[0.2em] uppercase bg-ink text-white border border-ink
                           transition-colors">
-                            <span className='text'>What is Coaching?</span>
+                            <span className='text'>What is life coaching?</span>
                         <span className='icon'><ArrowIcon /></span>
             </a>
           </div>
