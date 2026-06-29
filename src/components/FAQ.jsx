@@ -28,7 +28,7 @@ const FAQ_ITEMS = [
 
     I do work with clients who are seeking a
     consultant or mentor. Setting these expectations
-    upfront helps us both design how we will work.`,
+    upfront helps us both design how we will work together.`,
     // a: 'In the simplest of terms, life coaching is helping you clarify what you want and empowering you to move toward it.',
   },
   {

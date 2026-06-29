@@ -57,13 +57,16 @@ const handleCopyEmail = () => {
         </p> */}
 
         <div className="d-inflex reveal delay-4 mb-7">
-          <a href="mailto:alexis@alexisbormann.com"
-          onClick={handleCopyEmail}
-            className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[11px] font-normal
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=alexis@alexisbormann.com"
+          target="_blank"
+          rel="noopener noreferrer"
+
+            className="btn-effect2 btn-bg-hover inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-ink text-white border border-ink
                         transition-colors">
                         <span className='text'>Request A Session</span>
-                        <span className='icon'> <Mail /> </span>
+                        <span className='icon2'> <Mail /> </span>
     
           </a>
         </div>

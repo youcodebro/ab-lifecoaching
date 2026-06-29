@@ -5,7 +5,7 @@ const LOGO_SRC = `${process.env.PUBLIC_URL}/media/ab-logo-black-transparent.webp
 
 
 const NAV_LINKS = [
-  { label: 'Is life coaching for me?', href: '#coaching' },
+  { label: 'Is Life Coaching For Me?', href: '#coaching' },
   { label: 'Creating Impact',      href: '#impact'   },
   { label: 'Common Questions',     href: '#faq'      },
   { label: 'About',                href: '#about'    },

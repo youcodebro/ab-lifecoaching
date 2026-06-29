@@ -28,21 +28,21 @@ so much<br /> of what I do
             <img src={headshotImg} alt="Alexis Bormann"
               className="w-full h-full object-cover object-top" />
           </div> */}
-          <p className="reveal delay-2 text-base font-normal leading-[2.1] text-ink2 mb-6">
+          <p className="reveal delay-2 text-base font-normal leading-[2.1] text-ink mb-6">
             {/* I was born and raised in the  */}
             <strong className="text-ink font-semibold">I was born and raised amidst the stimulating buzz of New York City.</strong> Since I was little,
             I was always chasing big. From age 12, I was a competitive runner always trying to
             beat my own records. I started my own theater company at the age of 26. I landed a
             job in advertising with no prior experience.
           </p>
-          <p className="reveal delay-3 text-base font-light leading-[2.1] text-ink2 mb-6">
+          <p className="reveal delay-3 text-base font-normal leading-[2.1] text-ink mb-6">
             <strong className="text-ink font-semibold">I was accustomed to working hard.</strong> Really
             hard. And I loved it. Until I didn't. After over a decade working as a copywriter, I found
             myself getting burnt out. I started to continually feel blocked creatively. What was once
             important to me, no longer mattered. As a busy parent, I struggled to prioritize myself.
             I felt like a piece was missing from my life, but I couldn't put my finger on what.
           </p>
-          <p className="reveal delay-4 text-base font-normal leading-[2.1] text-ink2 mb-6">
+          <p className="reveal delay-4 text-base font-normal leading-[2.1] text-ink mb-6">
             <strong className="text-ink font-semibold">Applying what I've learned as a coach has helped
             me find balance and meaning.</strong> I learned that a life led with genuine purpose can
             create a profound sense of peace and buoyancy. My passion now lies in helping others break
@@ -58,7 +58,7 @@ so much<br /> of what I do
               I do still love to write and occasionally take on projects.
             </p>
             <a href="https://wordbydesign.com" target="_blank" rel="noopener noreferrer"
-              className="inline-block mt-3 text-[11px] tracking-[0.22em] uppercase text-muted
+              className="inline-block mt-3 text-[11px] tracking-[0.22em] uppercase text-ink2
                          border-b border-ink/10 pb-0.5 transition-colors hover:text-ink hover:border-ink">
               WordByDesign ↗
             </a>

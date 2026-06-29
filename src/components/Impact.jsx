@@ -13,9 +13,13 @@ export default function Impact() {
           <p className="reveal text-[11px] tracking-[0.28em] uppercase text-white/80 mb-7">
             Creating Impact
           </p>
-          <h2 className="reveal delay-1 font-serif font-light leading-[1.6] text-white
+          <h2 className="reveal delay-1 font-serif font-light leading-[1.6] tracking-wide text-white
                          text-[clamp(32px,3.6vw,52px)]">
-            The <i> impact </i> <br /> of <span className='opacity-0'>i</span>life coaching 
+            {/* The <i> impact </i> <br /> of <span className='opacity-0'>i</span>life coaching  */}
+            The <i> impact </i> <br /> 
+            <span className='tracking-widest'>of </span>
+             life 
+             coaching 
             {/* The <i>impact </i> <br /> of life coaching */}
           </h2>
         </div>
