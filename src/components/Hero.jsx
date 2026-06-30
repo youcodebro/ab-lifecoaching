@@ -62,7 +62,7 @@ export default function Hero() {
           {/* Starting exactly where you are. */}
         </p>
         
-        <div className="hero-anim animate-fade-up-4 flex gap-4 flex-wrap mt-[25px]">
+        {/* <div className="hero-anim animate-fade-up-4 flex gap-4 flex-wrap mt-[25px]"> */}
           {/* <a href="#connect"
             className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-ink text-white border border-ink
@@ -76,7 +76,7 @@ export default function Hero() {
                         hover:text-white transition-colors">
             What is life coaching?
           </a> */}
-        </div>
+        {/* </div> */}
 
         {/* Scroll indicator */}
         {/* <div className="hero-anim animate-fade-up-6 hidden md:flex absolute bottom-10

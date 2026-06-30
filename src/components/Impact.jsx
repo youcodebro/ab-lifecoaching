@@ -14,7 +14,7 @@ export default function Impact() {
             Creating Impact
           </p>
           <h2 className="reveal delay-1 font-serif font-light leading-[1.6] tracking-wide text-white
-                         text-[clamp(32px,3.6vw,52px)]">
+                         text-[clamp(32px,3.5vw,52px)] md:text-[40px] impact-title">
             {/* The <i> impact </i> <br /> of <span className='opacity-0'>i</span>life coaching  */}
             The <i> impact </i> <br /> 
             <span className='tracking-widest'>of </span>

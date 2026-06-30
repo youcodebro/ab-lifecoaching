@@ -4,7 +4,8 @@ import instaImg from '../assets/instagram.png';
 import linkedinImg from '../assets/linkedin.png';
 import mailImg from '../assets/mail.png';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import { Copy, Mail} from "lucide-react";
+import { Copy, Mail, Check} from "lucide-react";
+
 
 // const ArrowIcon = () => (
 //   <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
@@ -15,6 +16,18 @@ import { Copy, Mail} from "lucide-react";
 export default function Connect() {
   const [copied, setCopied] = useState(false);
   const ref = useScrollReveal();
+
+  // Mail Button 
+  const email = "alexis@alexisbormann.com";
+
+  const handleMailClick = (e) => {
+    // 1. Copy the email to clipboard so they can paste it manually if mailto fails
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    
+    // Reset the "Copied!" text back to original after 3 seconds
+    setTimeout(() => setCopied(false), 3000);
+  };
 
   // Create a reusable function to handle the copy action
 const handleCopyEmail = () => {
@@ -57,10 +70,8 @@ const handleCopyEmail = () => {
         </p> */}
 
         <div className="d-inflex reveal delay-4 mb-7">
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=alexis@alexisbormann.com"
-          target="_blank"
-          rel="noopener noreferrer"
+        {/* <a
+          href="mailto:alexis@alexisbormann.com?subject=Book%20Life%20Coaching%20Exploration%20Session&body=I%27d%20Like%20to%20learn%20more%20about%20life%20coaching%20with%20you%2C%20Alexis"
 
             className="btn-effect2 btn-bg-hover inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[11px] font-normal
                        tracking-[0.2em] uppercase bg-ink text-white border border-ink
@@ -68,7 +79,20 @@ const handleCopyEmail = () => {
                         <span className='text'>Request A Session</span>
                         <span className='icon2'> <Mail /> </span>
     
-          </a>
+          </a> */}
+          <a
+          href={`mailto:${email}?subject=Book%20Life%20Coaching%20Exploration%20Session&body=I%27d%20Like%20to%20learn%20more%20about%20life%20coaching%20with%20you%2C%20Alexis`}
+          onClick={handleMailClick}
+          className="btn-effect2 btn-bg-hover inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[10px] md:text-[11px] font-normal
+                    tracking-[0.2em] uppercase bg-ink text-white border border-ink transition-colors"
+        >
+          <span className='text'>
+            {copied ? "Email Copied to Clipboard!" : "Request A Session"}
+          </span>
+          <span className='icon2'> 
+            {copied ? <Check size={14} /> : <Mail />} 
+          </span>
+        </a>
         </div>
 
         <ul className='social-links flex gap-9 justify-center mb-3'>

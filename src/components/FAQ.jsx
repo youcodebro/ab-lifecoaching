@@ -65,7 +65,7 @@ function FAQItem({ q, a, isOpen, onClick }) {
       <button
         onClick={onClick}
         className="w-full flex justify-between items-center gap-5 py-[26px]
-                   text-[16px] md:text-[18px] font-medium text-ink text-left hover:text-ink2 transition-colors"
+                   text-[14px] md:text-[18px] font-semibold text-ink text-left hover:text-ink2 transition-colors"
       >
         {q}
         <span className={`w-6 h-6 shrink-0 rounded-full border border-ink/15 flex items-center
@@ -75,7 +75,7 @@ function FAQItem({ q, a, isOpen, onClick }) {
         </span>
       </button>
       <div className="overflow-hidden transition-all duration-500"
-        style={{ maxHeight: isOpen ? '750px' : '0' }}>
+        style={{ maxHeight: isOpen ? '1500px' : '0' }}>
         <p className="pb-[26px] text-[14px] md:text-[16px] font-normal leading-8 text-ink2 md:whitespace-pre-line">{a}</p>
         
       </div>
@@ -105,7 +105,7 @@ export default function FAQ() {
   const col1 = FAQ_ITEMS.slice(0, 4);
 
   return (
-    <section id="faq" ref={ref} className=" py-[40px] md:py-[80px] px-[30px] md:px-[52px]">
+    <section id="faq" ref={ref} className=" py-[30px] md:py-[80px] px-[30px] md:px-[52px]">
       <div className="max-w-[1140px] mx-auto">
         {/* <div className='faq-content'>
 
@@ -119,7 +119,7 @@ export default function FAQ() {
         </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className='faq-left p-[30px] bg-paper'>
+          <div className='faq-left p-[15px] md:p-[30px] bg-paper'>
             <div className='faq-content'>
                 <p className="reveal text-[12px] tracking-[0.28em] uppercase text-muted mb-6">
                   Common Questions

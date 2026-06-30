@@ -41,7 +41,7 @@ export default function Coaching() {
 
           </p>
           <h2 className="reveal delay-1 font-serif font-light leading-[1.12]
-                         text-[clamp(38px,4.5vw,64px)]">
+                         text-[clamp(38px,4.5vw,64px)] mb-heading">
             {/* What can coaching help with? */}
             What does life coaching help with?
           </h2>
@@ -123,7 +123,7 @@ export default function Coaching() {
 
           <div className="reveal mt-[52px]">
             <a href="#faq"
-              className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-8 py-3 text-[11px] font-normal
+              className="btn-effect btn-bg-hover inline-flex items-center gap-2 px-6 md:px-6 py-3 text-[10px] md:text-[11px] font-normal
                          tracking-[0.2em] uppercase bg-ink text-white border border-ink
                           transition-colors">
                             <span className='text'>What is life coaching?</span>

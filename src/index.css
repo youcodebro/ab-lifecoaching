@@ -144,6 +144,14 @@ html {
 
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+#impact .impact-title{
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+}
+
 @media screen and (max-width: 767px) {
   
   .banner-section{
@@ -167,6 +175,15 @@ html {
   }
   .faq-thumb img{
     min-height: auto;
+  }
+  section .text-base{
+    font-size: 14px;
+  }
+  .banner-content h1{
+    font-size: 40px;
+  }
+  .mb-heading{
+    font-size: 32px;
   }
 }
 /* @media screen and (max-width: 1024px) {
