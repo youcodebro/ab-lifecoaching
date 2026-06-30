@@ -82,24 +82,25 @@ const handleCopyEmail = () => {
           </a> */}
           <a
           href={`mailto:${email}?subject=Book%20Life%20Coaching%20Exploration%20Session&body=I%27d%20Like%20to%20learn%20more%20about%20life%20coaching%20with%20you%2C%20Alexis`}
-          onClick={handleMailClick}
+          
           className="btn-effect2 btn-bg-hover inline-flex items-center gap-2 px-6 md:px-11 py-4 text-[10px] md:text-[11px] font-normal
                     tracking-[0.2em] uppercase bg-ink text-white border border-ink transition-colors"
         >
-          <span className='text'>
+          {/* <span className='text'>
             {copied ? "Email Copied to Clipboard!" : "Request A Session"}
           </span>
           <span className='icon2'> 
             {copied ? <Check size={14} /> : <Mail />} 
-          </span>
+          </span> */}
+          <span className='text'>Request A Session</span>
+          <span className='icon2'> <Mail /> </span>
         </a>
         </div>
 
         <ul className='social-links flex gap-9 justify-center mb-3'>
           <li>
             <a 
-              href="mailto:alexis@alexisbormann.com"
-              onClick={handleCopyEmail}
+              href={`mailto:${email}?subject=Book%20Life%20Coaching%20Exploration%20Session&body=I%27d%20Like%20to%20learn%20more%20about%20life%20coaching%20with%20you%2C%20Alexis`}
               
               >
               <img src={mailImg} className='max-w-[40px]' alt="Alexis Bormann Email Address" />
