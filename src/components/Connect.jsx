@@ -4,7 +4,7 @@ import instaImg from '../assets/instagram.png';
 import linkedinImg from '../assets/linkedin.png';
 import mailImg from '../assets/mail.png';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import { Copy, Mail, Check} from "lucide-react";
+import { Copy, Mail} from "lucide-react";
 
 
 // const ArrowIcon = () => (
@@ -20,14 +20,6 @@ export default function Connect() {
   // Mail Button 
   const email = "alexis@alexisbormann.com";
 
-  const handleMailClick = (e) => {
-    // 1. Copy the email to clipboard so they can paste it manually if mailto fails
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    
-    // Reset the "Copied!" text back to original after 3 seconds
-    setTimeout(() => setCopied(false), 3000);
-  };
 
   // Create a reusable function to handle the copy action
 const handleCopyEmail = () => {
