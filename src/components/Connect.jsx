@@ -125,19 +125,22 @@ const handleCopyEmail = () => {
           </a> */}
 
           <div className="flex relative items-center justify-center gap-2 mt-6">
-              <a
-                href="mailto:alexis@alexisbormann.com"
+              <button
+                
                 onClick={handleCopyEmail}
                 className="text-black"
               >
-                Alexis@AlexisBormann.com
+                {/* Alexis@AlexisBormann.com */}
+                <span className='text'>
+                  {copied ? "Email Copied to Clipboard!" : "Alexis@AlexisBormann.com"}
+                </span>
                 
-                {copied && (
+                {/* {copied && (
                   <span className="absolute -bottom-6 left-0 right-0 text-md text-blue-500">
                     Email copied ✓
                   </span>
-                )}
-              </a>
+                )} */}
+              </button>
 
               <button
                 onClick={() => {
